@@ -1,0 +1,67 @@
+#aboutContainer {
+    position: relative;
+    height: 100vh;
+    background-color: #aaa;
+    border-top: 1px solid #aaa;
+}
+#topArrow {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 25px;
+}
+.control {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#top {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    border-radius: 0 0 25% 0;
+}
+#backBottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 20vh;
+    background-color: #aaa;
+}
+#middleBottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 16vh;
+    background-color: #555;
+    border-radius: 24% 0 0 0;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 100vw;
+    height: 12vh;
+}
+@-webkit-keyframes slide-in {
+    100% { top: 0 }
+}
+@keyframes slide-in {
+    100% { top: 0 }
+}
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+}

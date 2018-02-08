@@ -1,0 +1,211 @@
+.rain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.8;
+}
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 15px;
+    height: 120px;
+    pointer-events: none;
+    animation: drop 0.5s linear infinite;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(0vh);
+    }
+    75% {
+        transform: translateY(90vh);
+    }
+    100% {
+        transform: translateY(90vh);
+    }
+}
+.stem {
+    width: 1px;
+    height: 60%;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+    animation: stem 0.5s linear infinite;
+}
+@keyframes stem {
+    0% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.splat {
+    width: 15px;
+    height: 10px;
+    border-top: 2px dotted rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+    animation: splat 0.5s linear infinite;
+    display: block;
+}
+@keyframes splat {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    90% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#titleFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#title {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    /*   color: #ededed; */
+    color: black;
+    height: 24px;
+}
+#subtitle {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 4px;
+    font-family: avenir, helvetica;
+    white-space: nowrap;
+    /*   color: #ededed; */
+    color: black;
+    height: 8px;
+}
+.controllers {
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+}
+#menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#bottomArrow {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+#scroll {
+    position: absolute;
+    bottom: 15px;
+    right: 50%;
+}
+#gallery {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.control {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.control:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+.control:active {
+    color: rgba(0, 0, 0, 0.7);
+}
+.control.active {
+    color: rgba(0, 0, 0, 0.7);
+}
+@-webkit-keyframes slide-in {
+    100% { top: 0 }
+}
+@keyframes slide-in {
+    100% { top: 0 } 
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #title {
+        font-size: 42px;
+        letter-spacing: 9px;
+        height: 42px;
+    }
+    #subtitle {
+        font-size: 12px;
+        letter-spacing: 6px;
+        height: 12px;
+    }
+    #menu {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    #bottomArrow {
+        position: absolute;
+        bottom: 20px;
+        right: 25px;
+    }
+    #scroll {
+        position: absolute;
+        bottom: 15px;
+        right: 50%;
+    }
+    #gallery {
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 40px;
+        left: 25px;
+    }
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+    }
+    .control {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+    }
+}
