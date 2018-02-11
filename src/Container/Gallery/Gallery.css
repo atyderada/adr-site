@@ -1,11 +1,24 @@
 #galleryContainer {
     width: 100vw;
     height: 100vh;
+    color: white;
     display: flex;
-    flex-direction: row;
-    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: black;
-    justify-content: flex-start;
+}
+#galleryTitle {
+    font-size: 16px;
+    letter-spacing: 8px;
+    margin: 0 0 20px;
+}
+#imageContainer {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
 }
 #home {
     position: absolute;
@@ -13,10 +26,37 @@
     right: 25px;
 }
 .control {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
     border-radius: 50%;
     cursor: pointer;
     transition: color 0.3s;
+}
+.image {
+    background-color: white;
+    height: 15vh;
+    opacity: 0.2;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #galleryTitle {
+        font-size: 24px;
+        letter-spacing: 12px;
+        margin: 0 0 25px;
+    }
+    #imageContainer {
+        width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .image {
+        height: 25vh;
+    }
+    .control {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
 }

@@ -41,6 +41,6 @@
         justify-content: flex-start;
     }
     .banner {
-        border: 1px solid rgba(0, 0, 0, 0.7);
+        border: 0.5px solid rgba(0, 0, 0, 0.7);
     }
 }

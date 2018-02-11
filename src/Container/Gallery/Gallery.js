@@ -10,7 +10,18 @@ const gallery = ( props ) => {
                     <path fill="#fff" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
                 </svg>
             </div>
-            <h2>Gallery</h2>
+            <div id="galleryTitle">GALLERY</div>
+            <div id="imageContainer">
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+                <div className="image"></div>
+            </div>
         </div>
     );
 };

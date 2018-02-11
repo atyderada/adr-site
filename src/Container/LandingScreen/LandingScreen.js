@@ -16,14 +16,14 @@ const landing = ( props ) => {
         //add in a new raindrop with various randomizations to certain CSS properties
         var dropStyle = {
             left: increment + "%",
-            bottom: randoFiver - 1 + 98 + "%",
+            bottom: randoFiver - 1 + 95 + "%",
             animationDelay: randoHundo * 0.01 + 's',
             animationDuration: 0.5 + randoHundo * 0.01 + 's', 
         }
         var backDropStyle = {
             right: increment + "%",
             bottom: randoFiver - 1 + 100 + "%",
-            animationDelay: randoHundo * 0.01  + 's',
+            animationDelay: randoHundo * 0.02  + 's',
             animationDuration: 0.5 + randoHundo * 0.01 + 's',
         }
         var stemStyle = {
