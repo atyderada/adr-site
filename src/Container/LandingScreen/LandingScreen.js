@@ -51,8 +51,13 @@ const landing = ( props ) => {
         <div>
             <div className="rain front-row">{drops}</div>
             <div className="controllers">
-                <div className="control" id="logo">ADR</div>
-                <div className="control" id="menu" onClick={() => props.toggle()}>
+                <a className="control" id="logo">
+                    <img
+                        style={{ width: '3.4vmin', height: '3.4vmin', marginTop: '0vh'}}
+                        src={require('../../assets/personal-logo.png')} alt='Adr-logo' />
+                </a>
+                {/* <div className="control" id="logo">ADR</div> */}
+                <div className="contr ol" id="menu" onClick={() => props.toggle()}>
                     <svg style={{width:24+'px',height:24+'px'}} viewBox="0 0 24 24">
                         <path fill="#000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
                     </svg>
