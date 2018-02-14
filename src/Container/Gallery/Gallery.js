@@ -12,15 +12,15 @@ const gallery = ( props ) => {
             </div>
             <div id="galleryTitle">GALLERY</div>
             <div id="imageContainer">
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
-                <div className="image"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
             </div>
         </div>
     );

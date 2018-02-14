@@ -4,7 +4,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     opacity: 0.95;
     background-color: black;
@@ -12,14 +12,7 @@
 #galleryTitle {
     font-size: 16px;
     letter-spacing: 8px;
-    margin: 0 0 20px;
-}
-#imageContainer {
-    width: 80vw;
-    height: auto;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr;
+    margin: 0 0 -50px;
 }
 #home {
     position: absolute;
@@ -35,29 +28,165 @@
     cursor: pointer;
     transition: color 0.3s;
 }
-.image {
-    background-color: white;
-    height: 15vh;
-    opacity: 0.2;
+#imageContainer {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    margin: 0;
+    grid-gap: 6px;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
 }
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
+.box {
+    background-position:center center;
+    background-color: white;
+    background-size: cover;
+    min-height: 90px;
+    opacity: 0.5;
+}
+.box:nth-child(1) {
+    -webkit-grid-column: span 2;
+    grid-column: span 2;
+    background-image: url('../../assets/images/DarkSunset.jpg');  
+}
+.box:nth-child(2) {
+    -webkit-grid-column: span 2;
+    grid-column: span 2;
+    background-image: url('../../assets/images/FlyingTrain.JPG');   
+}
+.box:nth-child(3) {
+    -webkit-grid-row: span 2;
+    grid-row: span 2;
+    background-image: url('../../assets/images/Gaudi1.jpg');
+}
+.box:nth-child(4) {
+    -webkit-grid-row: span 2;
+    grid-row: span 2;
+    background-image: url('../../assets/images/OneToOne.JPG');  
+}
+.box:nth-child(5) {
+    -webkit-grid-column: span 2;
+    grid-column: span 2;
+    background-image: url('../../assets/images/GoldenDawn.JPG'); 
+}
+.box:nth-child(6) {
+    -webkit-grid-column: span 2;
+    grid-column: span 2;
+    background-image: url('../../assets/images/Illimani.jpg');
+}
+.box:nth-child(7) {
+    -webkit-grid-column: span 2;
+    grid-column: span 2;
+    background-image: url('../../assets/images/Sunset.JPG');  
+}
+.box:nth-child(8) {
+    -webkit-grid-column: span 2;
+    grid-column: span 2;
+    background-image: url('../../assets/images/UmedaSky.JPG');   
+}
+.box:nth-child(9) {
+    -webkit-grid-row: span 2;
+    grid-row: span 2; 
+    background-image: url('../../assets/images/NeedleBoat.JPG');
+}
+.box:hover {
+    opacity: 1;
+    background-color: transparent;
+}
+@media only screen and (min-width: 1200px) {
     #galleryTitle {
-        font-size: 24px;
-        letter-spacing: 12px;
-        margin: 0 0 25px;
+        font-size: 25px;
+        letter-spacing: 15px;
+        margin: 0 0 -60px;
     }
     #imageContainer {
         width: 90vw;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     }
-    .image {
-        height: 25vh;
+    .box {
+        min-height: 125px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    #galleryTitle {
+        font-size: 24px;
+        letter-spacing: 14px;
+        margin: 0 0 -65px;
+    }
+    #imageContainer {
+        width: 90vw;
+        grid-gap: 9px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .box {
+        min-height: 125px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* For desktop: */
+    #galleryTitle {
+        font-size: 22px;
+        letter-spacing: 12px;
+        margin: 0 0 -55px;
     }
     .control {
         width: 50px;
         height: 50px;
         line-height: 50px;
+    }
+    #imageContainer {
+        width: 90vw;
+        grid-gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    }
+    .box {
+        min-height: 100px;
+    }
+    .box:nth-child(1) {
+        -webkit-grid-column: span 2;
+        grid-column: span 2;
+        background-image: url('../../assets/images/DarkSunset.jpg');  
+    }
+    .box:nth-child(2) {
+        -webkit-grid-column: span 2;
+        grid-column: span 2;
+        background-image: url('../../assets/images/FlyingTrain.JPG');   
+    }
+    .box:nth-child(3) {
+        -webkit-grid-row: span 3;
+        grid-row: span 3;
+        background-image: url('../../assets/images/Gaudi2.jpg');
+    }
+    .box:nth-child(4) {
+        -webkit-grid-row: span 3;
+        grid-row: span 3;
+        background-image: url('../../assets/images/Gaudi1.jpg');  
+    }
+    .box:nth-child(5) {
+        -webkit-grid-column: span 2;
+        grid-column: span 2;
+        background-image: url('../../assets/images/GoldenDawn.JPG'); 
+    }
+    .box:nth-child(6) {
+        -webkit-grid-column: span 2;
+        grid-column: span 2;
+        background-image: url('../../assets/images/Illimani.jpg');
+    }
+    .box:nth-child(7) {
+        -webkit-grid-column: span 2;
+        grid-column: span 2;
+        background-image: url('../../assets/images/OneToOne.JPG'); 
+    }
+    .box:nth-child(8) {
+        -webkit-grid-column: span 2;
+        grid-column: span 2;
+        background-image: url('../../assets/images/UmedaSky.JPG');   
+    }
+    .box:nth-child(9) {
+        -webkit-grid-row: span 2;
+        grid-row: span 2;
+        background-image: url('../../assets/images/NeedleBoat.JPG');  
     }
 }
