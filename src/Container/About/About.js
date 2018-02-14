@@ -17,6 +17,14 @@ const about = ( props ) => {
                     Passionate, creative developer and designer. My favorite language is javascript and I use the adobe creative suite.
                     Passionate, creative developer and designer. My favorite language is javascript and I use the adobe creative suite.
                 </span>
+                <div id="iconsContainer">
+                    <a href="https://www.youtube.com/playlist?list=PLFTQSQOjNIfNKpVekjwU3pzDtlZBKVYp3" target="_blank">
+                        <img class="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
+                    </a>
+                    <a href="http://www.rose-hulman.edu/" target="_blank">
+                        <img class="aboutIcon" src={require('../../assets/rose-hulman.png')} alt="Rose Hulman Icon" />
+                    </a>
+                </div>
             </div>
             <div id="bottom">
                 <div id="backBottom"></div>
