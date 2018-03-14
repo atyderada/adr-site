@@ -22,8 +22,8 @@ const landing = ( props ) => {
         }
         var backDropStyle = {
             right: increment + "%",
-            bottom: randoFiver - 1 + 100 + "%",
-            animationDelay: randoHundo * 0.02  + 's',
+            bottom: randoFiver - 1 + 98 + "%",
+            animationDelay: randoHundo * 0.011  + 's',
             animationDuration: 0.5 + randoHundo * 0.01 + 's',
         }
         var stemStyle = {
@@ -34,7 +34,6 @@ const landing = ( props ) => {
             animationDelay: randoHundo * 0.01 + 's',
             animationDuration: 0.5 + randoHundo * 0.01 + 's',
         }
-        index += 1;
         drops.push(
             <div key={index} className="drop" style={dropStyle}>
                 <div className="stem" style={stemStyle}></div>
@@ -45,16 +44,17 @@ const landing = ( props ) => {
                 <div className="stem" style={stemStyle}></div>
                 <div className="splat" style={splatStyle}></div>
             </div>)
+        index += 1;
     }
 
     return (
         <div>
             <div className="rain front-row">{drops}</div>
             <div className="controllers">
-                <a className="control" id="logo">
+                <a id="logo">
                     <img
                         style={{ width: '3.4vmin', height: '3.4vmin', marginTop: '0vh'}}
-                        src={require('../../assets/personal-logo.png')} alt='Adr-logo' />
+                        src={require('../../assets/logo.png')} alt='Adr-logo' />
                 </a>
                 {/* <div className="control" id="logo">ADR</div> */}
                 <div className="control" id="menu" onClick={() => props.toggle()}>

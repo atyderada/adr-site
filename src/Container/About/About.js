@@ -12,6 +12,7 @@ const about = ( props ) => {
             </div>
             <div id="top">
                 <span id="aboutTitle">About Me</span>
+                <div id="aboutPicture"></div>
                 <span id="aboutText">
                     Passionate, creative developer and designer. My favorite language is javascript and I use the adobe creative suite.
                     Passionate, creative developer and designer. My favorite language is javascript and I use the adobe creative suite.

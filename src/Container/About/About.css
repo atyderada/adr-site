@@ -8,7 +8,7 @@
     position: absolute;
     z-index: 1;
     top: 50px;
-    right: 25px;
+    right: 37px;
 }
 .control {
     width: 50px;
@@ -104,10 +104,17 @@
         padding: 0 10vw;
     }
     #aboutTitle {
-        font-size: 18pt;
+        font-size: 22pt;
         font-weight: 600;
-        letter-spacing: 2pt;
-        margin-bottom: 4vh;
+        letter-spacing: 6pt;
+        margin-bottom: 25px;
+    }
+    #aboutPicture {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 45px;
+        background-color: black;
     }
     #iconsContainer {
         margin-top: 6vh;

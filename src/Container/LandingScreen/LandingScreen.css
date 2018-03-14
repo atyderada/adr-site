@@ -136,6 +136,7 @@
     position: absolute;
     top: 10px;
     left: 15px;
+    transition: transform 0.4s;
 }
 .control {
     width: 15px;
@@ -151,6 +152,10 @@
 }
 .control:hover {
     transform: scale(1.2);
+}
+#logo:hover {
+    cursor: none;
+    transform: scale(1.4);
 }
 @-webkit-keyframes slide-in {
     100% { top: 0 }
@@ -172,13 +177,13 @@
     }
     #menu {
         position: absolute;
-        top: 20px;
-        right: 25px;
+        top: 50px;
+        right: 50px;
     }
     #bottomArrow {
         position: absolute;
-        bottom: 20px;
-        right: 25px;
+        bottom: 50px;
+        right: 50px;
     }
     #scroll {
         position: absolute;
@@ -189,13 +194,13 @@
         transform: rotate(-90deg);
         position: absolute;
         letter-spacing: 1pt;
-        bottom: 40px;
-        left: 25px;
+        bottom: 45px;
+        left: 50px;
     }
     #logo {
         position: absolute;
-        top: 20px;
-        left: 25px;
+        top: 40px;
+        left: 40px;
     }
     .control {
         width: 3vmin;
