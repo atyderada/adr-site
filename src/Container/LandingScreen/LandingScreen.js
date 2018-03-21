@@ -6,7 +6,7 @@ const landing = ( props ) => {
     var drops = [];
     var increment = 0;
     var index = 0;
-    while (increment < 42) {
+    while (increment < 100) {
         //random number between 98 and 1
         var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
         //random number between 4 and 2
@@ -16,23 +16,23 @@ const landing = ( props ) => {
         //add in a new raindrop with various randomizations to certain CSS properties
         var dropStyle = {
             left: increment + "%",
-            bottom: randoFiver - 1 + 95 + "%",
+            bottom: randoFiver - 1 + 97 + "%",
             animationDelay: randoHundo * 0.01 + 's',
-            animationDuration: 0.5 + randoHundo * 0.01 + 's', 
+            animationDuration: 1.5 + randoHundo * 0.01 + 's', 
         }
         var backDropStyle = {
             right: increment + "%",
-            bottom: randoFiver - 1 + 98 + "%",
-            animationDelay: randoHundo * 0.011  + 's',
-            animationDuration: 0.5 + randoHundo * 0.01 + 's',
+            bottom: randoFiver - 1 + 103 + "%",
+            animationDelay: randoHundo * 0.01  + 's',
+            animationDuration: 1.5 + randoHundo * 0.01 + 's',
         }
         var stemStyle = {
             animationDelay: randoHundo * 0.01 + 's',
-            animationDuration: 0.5 + randoHundo * 0.01 + 's',
+            animationDuration: 1.5 + randoHundo * 0.01 + 's',
         }
         var splatStyle = {
             animationDelay: randoHundo * 0.01 + 's',
-            animationDuration: 0.5 + randoHundo * 0.01 + 's',
+            animationDuration: 1.5 + randoHundo * 0.01 + 's',
         }
         drops.push(
             <div key={index} className="drop" style={dropStyle}>
@@ -51,7 +51,7 @@ const landing = ( props ) => {
         <div>
             <div className="rain front-row">{drops}</div>
             <div className="controllers">
-                <a id="logo">
+                <a id="lanlogo">
                     <img
                         style={{ width: '3.4vmin', height: '3.4vmin', marginTop: '0vh'}}
                         src={require('../../assets/logo.png')} alt='Adr-logo' />

@@ -1,7 +1,8 @@
 #aboutContainer {
-    position: relative;
     height: 100vh;
-    background-color: #aaa;
+    position: relative;
+    /* background-color: #aaa; */
+    background-color: #555;
     border-top: 1px solid #aaa;
 }
 #topArrow {
@@ -23,9 +24,9 @@
     padding: 0 15vw;
     align-items: center;
     flex-direction: column;
-    background-color: white;
     justify-content: center;
     border-radius: 0 0 25% 0;
+    background-color: white;
 }
 #aboutTitle {
     font-size: 14pt;
@@ -40,13 +41,12 @@
 #iconsContainer {
     width: 100%;
     display: flex;
-    margin-top: 3vh;
     flex-direction: row;
     justify-content: space-around;
 }
 .aboutIcon {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 #bottom {
     opacity: 0.9;
@@ -57,7 +57,8 @@
     z-index: 1;
     width: 100vw;
     height: 20vh;
-    background-color: #aaa;
+    /* background-color: #aaa; */
+    background-color: #555;
 }
 #middleBottom {
     position: absolute;
@@ -65,7 +66,8 @@
     z-index: 2;
     width: 100vw;
     height: 16vh;
-    background-color: #555;
+    /* background-color: #555; */
+    background-color: #1b1b1b;
     border-radius: 24% 0 0 0;
 }
 #footer {
@@ -84,12 +86,13 @@
 .iconButton {
     width: 24px;
     height: 24px;
+    opacity: 0.6;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: all 0.4s;
 }
 .iconButton:hover {
     opacity: 1;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 @-webkit-keyframes slide-in {
     100% { top: 0 }
@@ -104,20 +107,22 @@
         padding: 0 10vw;
     }
     #aboutTitle {
-        font-size: 22pt;
-        font-weight: 600;
-        letter-spacing: 6pt;
-        margin-bottom: 25px;
+        font-size: 20pt;
+        font-weight: 500;
+        letter-spacing: 3pt;
+        margin-bottom: 30px;
     }
     #aboutPicture {
         border-radius: 50%;
         width: 200px;
         height: 200px;
         margin-bottom: 45px;
-        background-color: black;
+        border-width: 1px;
+        background-color: #bbb;
     }
     #iconsContainer {
-        margin-top: 6vh;
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
     #aboutText {
         font-size: 15pt;

@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .drop {
     position: absolute;
@@ -11,7 +11,7 @@
     width: 15px;
     height: 120px;
     pointer-events: none;
-    animation: drop 0.5s linear infinite;
+    animation: drop 0.7s ease-in infinite;
 }
 @keyframes drop {
     0% {
@@ -29,17 +29,17 @@
     height: 60%;
     margin-left: 7px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
-    animation: stem 0.5s linear infinite;
+    animation: stem 0.7s ease-in infinite;
 }
 @keyframes stem {
     0% {
         opacity: 1;
     }
     65% {
-        opacity: 1;
+        opacity: 0.9;
     }
     75% {
-        opacity: 0;
+        opacity: 0.1;
     }
     100% {
         opacity: 0;
@@ -48,11 +48,11 @@
 .splat {
     width: 15px;
     height: 10px;
-    border-top: 2px dotted rgba(0, 0, 0, 0.5);
+    border-top: 2px dotted rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     opacity: 1;
     transform: scale(0);
-    animation: splat 0.5s linear infinite;
+    animation: splat 0.7s linear infinite;
     display: block;
 }
 @keyframes splat {
@@ -116,11 +116,13 @@
     position: absolute;
     top: 15px;
     right: 15px;
+    transition: all 0.4s;
 }
 #bottomArrow {
     position: absolute;
     bottom: 10px;
     right: 15px;
+    transition: all 0.4s;
 }
 #scroll {
     position: absolute;
@@ -131,8 +133,11 @@
     position: absolute;
     bottom: 10px;
     left: 20px;
+    font-size: 10px;
+    line-height: 10px;
+    transition: all 0.4s;
 }
-#logo {
+#lanlogo {
     position: absolute;
     top: 10px;
     left: 15px;
@@ -141,21 +146,12 @@
 .control {
     width: 15px;
     height: 15px;
-    line-height: 15px;
     text-align: center;
-    font-size: 10px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.3s;
-}
-.control:hover {
-    transform: scale(1.2);
-}
-#logo:hover {
-    cursor: none;
-    transform: scale(1.4);
+    transition: transform 0.4s;
 }
 @-webkit-keyframes slide-in {
     100% { top: 0 }
@@ -166,13 +162,13 @@
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     #title {
-        font-size: 42px;
-        letter-spacing: 9px;
         height: 42px;
+        font-size: 42px;
+        letter-spacing: 7px;
     }
     #subtitle {
         font-size: 12px;
-        letter-spacing: 6px;
+        letter-spacing: 7px;
         height: 12px;
     }
     #menu {
@@ -182,7 +178,7 @@
     }
     #bottomArrow {
         position: absolute;
-        bottom: 50px;
+        bottom: 45px;
         right: 50px;
     }
     #scroll {
@@ -195,17 +191,30 @@
         position: absolute;
         letter-spacing: 1pt;
         bottom: 45px;
-        left: 50px;
+        left: 45px;
     }
-    #logo {
-        position: absolute;
-        top: 40px;
-        left: 40px;
+    #lanlogo {
+        left: 50px;
+        top: 42px;
     }
     .control {
         width: 3vmin;
         height: 3vmin;
         line-height: 3vmin;
         font-size: 12px;
+    }
+    #bottomArrow:hover {
+        transform: scale(1.4);
+    }
+    #lanlogo:hover {
+        cursor: none;
+        transform: scale(1.3);
+    }
+    #menu:hover {
+        transform: rotate(90deg) translateY(-4px);
+    }
+    #gallery:hover {
+        font-size: 13px;
+        line-height: 13px;
     }
 }

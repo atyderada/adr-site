@@ -1,7 +1,7 @@
 #galleryContainer {
     z-index: 1;
     width: 100vw;
-    height: 130vh;
+    height: 420vh;
     color: white;
     display: flex;
     align-items: center;
@@ -41,10 +41,10 @@
 }
 #imageContainer {
     width: 85vw;
-    height: 120vh;
+    height: 400vh;
     display: grid;
     margin: 0;
-    grid-gap: 6px;
+    grid-gap: 3px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
@@ -52,6 +52,7 @@
     background-position:center center;
     background-color: white;
     background-size: cover;
+    transition: all 0.4s;
     min-height: 90px;
     cursor: pointer;
 }
@@ -107,27 +108,23 @@
 }
 .box:hover {
     opacity: 1;
+    transition: all 0.4s;
     background-color: transparent;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* For ipad: */
-    #galleryContainer {
-        height: 155vh;
-    }
     #galleryTitle {
         font-size: 22px;
-        letter-spacing: 12px;
         margin: 0 0 -55px;
+        letter-spacing: 12px;
+    }
+    #imageContainer {
+        grid-gap: 35px;
     }
     .control {
         width: 50px;
         height: 50px;
         line-height: 50px;
-    }
-    #imageContainer {
-        width: 90vw;
-        height: 142vh;
-        grid-gap: 10px;
     }
     .box {
         min-height: 125px;
@@ -135,13 +132,10 @@
 }
 @media only screen and (min-width: 1024px) and (max-width: 1025px) {
      /* For ipad pro: */
-    #galleryContainer {
-        height: 160vh;
-    }
     #galleryTitle {
-        font-size: 30px;
-        letter-spacing: 20px;
+        font-size: 23px;
         margin: 0 0 -55px;
+        letter-spacing: 13px;
     }
     #home {
         top: 35px;
@@ -152,9 +146,7 @@
         left: 32px;
     }
     #imageContainer {
-        width: 90vw;
-        height: 145vh;
-        grid-gap: 12px;
+        grid-gap: 40px;
     }
     .box {
         min-height: 125px;
@@ -163,12 +155,12 @@
 @media only screen and (min-width: 1025px) {
      /* For desktop: */
     #galleryContainer {
-        height: 305vh;
+        height: 420vh;
         padding-top: 10px;
     }
     #galleryTitle {
         font-size: 24px;
-        margin: 0 0 -25px;
+        margin: 0 0 -35px;
         letter-spacing: 16px;
     }
     #logo {
@@ -180,9 +172,7 @@
         right: 50px;
     }
     #imageContainer {
-        width: 90vw;
-        height: 290vh;
-        grid-gap: 12px;
+        grid-gap: 50px;
         max-width: 1050px;
     }
     .box {
