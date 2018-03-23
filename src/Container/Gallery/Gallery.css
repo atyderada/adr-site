@@ -26,11 +26,12 @@
     transform: scale(1.4);
 }
 #home {
-    position: absolute;
     top: 20px;
     right: 25px;
+    position: absolute;
 }
 .control {
+    z-index: 1;
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -40,19 +41,20 @@
     transition: color 0.3s;
 }
 #imageContainer {
+    margin: 0;
     width: 85vw;
     height: 400vh;
     display: grid;
-    margin: 0;
     grid-gap: 3px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .box {
     background-position:center center;
     background-color: white;
     background-size: cover;
     transition: all 0.4s;
+    border-radius: 8px;
     min-height: 90px;
     cursor: pointer;
 }

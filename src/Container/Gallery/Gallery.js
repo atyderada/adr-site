@@ -17,6 +17,7 @@ class Gallery extends React.Component {
         });
     }
     togglePopup(imageName) {
+        console.log("image: " + imageName);
         this.setState({
             currentImage: imageName,
             showPopup: !this.state.showPopup
@@ -37,20 +38,20 @@ class Gallery extends React.Component {
                 </div>
                 <div id="galleryTitle">GALLERY</div>
                 <div id="imageContainer">
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
-                    <div className="box" onClick={this.togglePopup.bind(this)}></div>
+                    <div className="box" onClick={() => this.togglePopup("DarkSunset.jpg")}></div>
+                    <div className="box" onClick={() => this.togglePopup("FlyingTrain.JPG")}></div>
+                    <div className="box" onClick={() => this.togglePopup("GoldenDawn.JPG")}></div>
+                    <div className="box" onClick={() => this.togglePopup("Sunset.JPG")}></div>
+                    <div className="box" onClick={() => this.togglePopup("Illimani.jpg")}></div>
+                    <div className="box" onClick={() => this.togglePopup("Gaudi1.jpg")}></div>
+                    <div className="box" onClick={() => this.togglePopup("Gaudi2.jpg")}></div>
+                    <div className="box" onClick={() => this.togglePopup("UmedaSky.JPG")}></div>
+                    <div className="box" onClick={() => this.togglePopup("NeedleBoat.JPG")}></div>
+                    <div className="box" onClick={() => this.togglePopup("OneToOne.JPG")}></div>
                 </div>
                 {this.state.showPopup ? 
                 <PictureDetail
-                    url={this.state.imageName}
+                    url={this.state.currentImage}
                     closePopup={this.closePopup.bind(this)}
                 />
                 : null}

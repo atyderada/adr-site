@@ -1,20 +1,46 @@
 .popup {
-    position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: rgba(0,0,0, 0.5);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    animation-name: fade;
+    flex-direction: column;
+    justify-content: center;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background-color: rgba(0, 0, 0, 0.8);
 }
-#popContainer {
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 10%;
-    bottom: 10%;
-    margin: auto;
-    background: white;
+#pictureContainer {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    animation-timing-function: ease-in-out;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+    animation-duration: 0.4s;
+    animation-name: grow;
+    border-radius: 16px;
+    max-height: 90%;
+    max-width: 90%;
+    height: 90%;
+    width: 90%;
+}
+@keyframes fade {
+    from {background-color: rgba(0, 0, 0, 0.1);}
+    to {background-color: rgba(0, 0, 0, 0.8);}
+}
+@keyframes grow {
+    from {
+        height: 0%;
+        width: 0%;
+        opacity: 0.1;
+    }
+    to {
+        height: 90%;
+        width: 90%;
+        opacity: 1;
+    }
 }
