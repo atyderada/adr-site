@@ -108,11 +108,6 @@
     grid-row: span 2; 
     background-image: url('../../assets/images/OneToOne.JPG');
 }
-.box:hover {
-    opacity: 1;
-    transition: all 0.4s;
-    background-color: transparent;
-}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* For ipad: */
     #galleryTitle {
@@ -180,5 +175,11 @@
     .box {
         opacity: 0.65;
         min-height: 150px;
+        transition: all 0.2s ease-out;
+    }
+    .box:hover {
+        opacity: 1;
+        transform: scale(1.02);
+        background-color: transparent;
     }
 }

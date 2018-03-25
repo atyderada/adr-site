@@ -6,41 +6,54 @@
     height: 100%;
     display: flex;
     position: fixed;
+    cursor: none;
     align-items: center;
     animation-name: fade;
     flex-direction: column;
     justify-content: center;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-#pictureContainer {
-    /* background-color: rgba(255, 255, 255, 0.8); */
+    animation-duration: 0.6s;
     animation-timing-function: ease-in-out;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size: auto 100%;
-    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#shineContainer {
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
     animation-name: grow;
     border-radius: 16px;
-    max-height: 90%;
-    max-width: 90%;
     height: 90%;
     width: 90%;
 }
+#pictureContainer {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    animation-timing-function: ease-out;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+    animation-duration: 0.9s;
+    animation-name: shine;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+}
 @keyframes fade {
-    from {background-color: rgba(0, 0, 0, 0.1);}
-    to {background-color: rgba(0, 0, 0, 0.8);}
+    from {background-color: rgba(0, 0, 0, 0.8);}
+    to {background-color: rgba(0, 0, 0, 0.9);}
 }
 @keyframes grow {
     from {
-        height: 0%;
-        width: 0%;
-        opacity: 0.1;
+        height: 60%;
+        width: 60%;
     }
     to {
         height: 90%;
         width: 90%;
-        opacity: 1;
+    }
+}
+@keyframes shine {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.9;
     }
 }

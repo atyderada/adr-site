@@ -1,6 +1,23 @@
-#outerContainer {
+#menuContainer {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#whiteBar {
+    color: black;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    letter-spacing: 6pt;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#outerContainer {
+    width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     opacity: 0.95;
@@ -9,21 +26,26 @@
 }
 .banner {
     color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 2.5pt;
     cursor: pointer;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    animation: background-color 3s;
+    transition: all 1s;
     justify-content: space-around;
     background-color: transparent;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+#layer {
+    transition: all 1s;
+    /* animation: background-color 2s; */
 }
 #close {
     position: absolute;
-    top: 20px;
-    right: 25px;
+    top: 30px;
+    right: 30px;
 }
 .control {
     z-index: 2;
@@ -45,12 +67,26 @@
         justify-content: flex-start;
     }
     .banner {
-        color: rgba(255, 255, 255, 0.6);
+        transition: all 1s;
+        color: rgba(255, 255, 255, 0.5);
         border-right: 0.1px solid rgba(255, 255, 255, 0.1);
         border-left: 0.1px solid rgba(255, 255, 255, 0.1);
     }
+    #devBanner {
+        background-color: #1B1B1B;
+    }
+    #devBanner:hover {
+        background-color: rgba(0, 0, 0, 0.1);;
+    }
+    #designBanner {
+        background-color: #0b0b0b;
+    }
+    #designBanner:hover {
+        background-color: rgba(0, 0, 0, 0.1);;
+    }
     .banner:hover {
         color: white;
-        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 16pt;
+        letter-spacing: 3.5pt;
     }
 }

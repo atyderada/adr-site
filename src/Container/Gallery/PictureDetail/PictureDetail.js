@@ -7,9 +7,11 @@ const pictureDetail = (props) => {
     console.log("Image url: " + imageUrl);
     return (
         <div className='popup' onClick={props.closePopup}>
-            <div id="pictureContainer"
-                style={{ backgroundImage: `url(${imageUrl})` }}
-            ></div>
+            <div id="shineContainer">
+                <div id="pictureContainer"
+                    style={{ backgroundImage: `url(${imageUrl})` }}
+                ></div>
+            </div>
         </div>
     );
 };

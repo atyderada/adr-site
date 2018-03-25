@@ -1,6 +1,7 @@
 import React from 'react';
 import './Gallery.css';
 import PictureDetail from './PictureDetail/PictureDetail';
+import LazyImage from '../../Components/LazyImage/LazyImage';
 
 class Gallery extends React.Component {
 
@@ -38,6 +39,16 @@ class Gallery extends React.Component {
                 </div>
                 <div id="galleryTitle">GALLERY</div>
                 <div id="imageContainer">
+                    {/* <LazyImage className="box" src='../../assets/images/DarkSunset.jpg'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/FlyingTrain.JPG'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/GoldenDawn.JPG'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/Sunset.JPG'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/Illimani.jpg'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/Gaudi1.jpg'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/Gaudi2.jpg'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/UmedaSky.JPG'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/NeedleBoat.JPG'></LazyImage>
+                    <LazyImage className="box" src='../../assets/images/OneToOne.JPG'></LazyImage> */}
                     <div className="box" onClick={() => this.togglePopup("DarkSunset.jpg")}></div>
                     <div className="box" onClick={() => this.togglePopup("FlyingTrain.JPG")}></div>
                     <div className="box" onClick={() => this.togglePopup("GoldenDawn.JPG")}></div>
