@@ -6,9 +6,6 @@ class Menu extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          class: 'neutral',
-          showMenu: false,
-          showGallery: false,
           color: 'transparent',
         }
     }
@@ -17,6 +14,14 @@ class Menu extends Component {
     }
     onHoverDesign = () => {
         this.setState({color: 'red'})
+    }
+    onClickDev = () => {
+        console.log("Show Dev")
+        this.props.showDev();
+    }
+    onClickDesign = () => {
+        console.log("Show Des")
+        this.props.showDes();
     }
     render() {
         let content =
@@ -28,10 +33,10 @@ class Menu extends Component {
             content = 
                 <div id="outerContainer">
                     <HoverBox hover={this.onHoverDev}>
-                        <div id="devBanner" className="banner"><h3>Development</h3></div>
+                        <div id="devBanner" className="banner" onClick={() => this.props.showDev()}><h3>Development</h3></div>
                     </HoverBox>
                     <HoverBox hover={this.onHoverDesign}>
-                        <div id="designBanner" className="banner"><h3>Design</h3></div>
+                        <div id="designBanner" className="banner" onClick={() => this.props.showDes()}><h3>Design</h3></div>
                     </HoverBox>
                     <div id="layer"
                         style={{backgroundColor:this.state.color, opacity:0.5, position:"absolute", width:"100vw", height:"100%", zIndex:0}}>

@@ -20,10 +20,10 @@ const about = ( props ) => {
                 </span>
                 <div id="iconsContainer">
                     <a href="https://www.youtube.com/playlist?list=PLFTQSQOjNIfNKpVekjwU3pzDtlZBKVYp3" target="_blank">
-                        <img className="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
+                        <img id="boliviaImg" className="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
                     </a>
                     <a href="http://www.rose-hulman.edu/" target="_blank">
-                        <img className="aboutIcon" src={require('../../assets/rose-hulman.png')} alt="Rose Hulman Icon" />
+                        <img id="roseImg" className="aboutIcon" src={require('../../assets/rose-hulman.png')} alt="Rose Hulman Icon" />
                     </a>
                 </div>
             </div>

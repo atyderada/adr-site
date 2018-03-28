@@ -45,8 +45,9 @@
     justify-content: space-around;
 }
 .aboutIcon {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease-out;
 }
 #bottom {
     opacity: 0.9;
@@ -106,6 +107,9 @@
         width: 80vw;
         padding: 0 10vw;
     }
+    #topArrow:hover {
+        transform: scale(1.2) translateY(-8px);
+    }
     #aboutTitle {
         font-size: 20pt;
         font-weight: 500;
@@ -127,5 +131,11 @@
     #aboutText {
         font-size: 15pt;
         line-height: 40pt;
+    }
+    #roseImg:hover {
+        transform: scale(1.5) rotate(-360deg);
+    }
+    #boliviaImg:hover {
+        transform: scale(1.5) rotate(360deg);
     }
 }

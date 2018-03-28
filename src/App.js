@@ -5,12 +5,16 @@ import LandingScreen from './Container/LandingScreen/LandingScreen';
 import About from './Container/About/About';
 import Menu from './Container/Menu/Menu';
 import Gallery from './Container/Gallery/Gallery';
+import Development from './Container/Development/Development';
+import Design from './Container/Design/Design';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       class: 'neutral',
+      showDev: false,
+      showDes: false,
       showMenu: false,
       showGallery: false,
     }
@@ -30,12 +34,19 @@ class App extends Component {
     const doesShow = this.state.showGallery;
     this.setState( { showGallery: !doesShow } );
   }
+  toggleDev = () => {
+    const doesShow = this.state.showDev;
+    this.setState( { showDev: !doesShow } );
+  }
+  toggleDes = () => {
+    const doesShow = this.state.showDes;
+    this.setState( { showDes: !doesShow } );
+  }
   handleScroll() {
     var scroll = document.documentElement.scrollTop;
-    console.log("scrolled");
-    console.log("last");
+    console.log("last scroll");
     console.log(this.state.lastScroll);
-    console.log("new");
+    console.log("new scroll");
     console.log(scroll);
     this.setState({lastScroll: scroll})
   }
@@ -53,20 +64,29 @@ class App extends Component {
     let landing = <LandingScreen toggle={this.toggleMenu} gallery={this.toggleGallery} scroll={this.scrollBottom} className={this.topName}></LandingScreen>
     let about = <About scroll={this.scrollTop} className={this.bottomName}></About>;
     let gallery = null;
-    if ( this.state.showMenu ) {
+    let projects = null;
+    if (this.state.showMenu) {
       landing = null;
       about = null;
-      menu = <Menu toggle={this.toggleMenu}></Menu>;
+      menu = <Menu toggle={this.toggleMenu} showDev={this.toggleDev} showDes={this.toggleDes}></Menu>;
     }
-    if ( this.state.showGallery ) {
+    if (this.state.showGallery) {
       landing = null;
       about = null;
       gallery = <Gallery toggle={this.toggleGallery}></Gallery>
     }
+    if (this.state.showDev) {
+      menu = null;
+      projects = <Development toggle={this.toggleDev}></Development>
+    }
+    if (this.state.showDes) {
+      menu = null;
+      projects = <Design toggle={this.toggleDes}></Design>
+    }
     return (
       <div className="App">
-        {/* <Moment color="white"></Moment> */}
         {menu}
+        {projects}
         {gallery}
         {landing}
         {about}
