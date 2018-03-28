@@ -29,7 +29,7 @@ class Gallery extends React.Component {
             <div id="galleryContainer">
                 <a id="logo">
                     <img
-                        style={{ width: '3.4vmin', height: '3.4vmin', marginTop: '0vh'}}
+                        id="logoImag"
                         src={require('../../assets/logo-inv.png')} alt='Adr-logo' />
                 </a>
                 <div className="control" id="home" onClick={() => this.props.toggle()} >

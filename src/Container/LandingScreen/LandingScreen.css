@@ -90,11 +90,11 @@
 #title {
     display: block;
     font-size: 24px;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     white-space: nowrap;
     /*   color: #ededed; */
     color: black;
-    height: 24px;
+    height: 20px;
 }
 #subtitle {
     display: block;
@@ -104,7 +104,7 @@
     white-space: nowrap;
     /*   color: #ededed; */
     color: black;
-    height: 8px;
+    height: 6px;
 }
 .controllers {
     position: absolute;
@@ -114,34 +114,33 @@
 }
 #menu {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 16px;
+    right: 14px;
     transition: all 0.4s;
 }
 #bottomArrow {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     right: 15px;
     transition: all 0.4s;
 }
-#scroll {
-    position: absolute;
-    bottom: 15px;
-    right: 50%;
-}
 #gallery {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 0px;
+    left: 25px;
     font-size: 10px;
-    line-height: 10px;
+    line-height: 15px;
     transition: all 0.4s;
 }
 #lanlogo {
     position: absolute;
-    top: 10px;
-    left: 15px;
+    top: 25px;
+    left: 25px;
     transition: transform 0.4s;
+}
+#logoImage {
+    width: 25px;
+    height: 25px;
 }
 .control {
     width: 15px;
@@ -171,9 +170,13 @@
         letter-spacing: 7px;
         height: 12px;
     }
+    #logoImage {
+        width: 35px;
+        height: 35px;
+    }
     #menu {
         position: absolute;
-        top: 50px;
+        top: 42px;
         right: 50px;
     }
     #bottomArrow {

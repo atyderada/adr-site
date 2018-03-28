@@ -53,7 +53,7 @@ const landing = ( props ) => {
             <div className="controllers">
                 <a id="lanlogo">
                     <img
-                        style={{ width: '3.4vmin', height: '3.4vmin', marginTop: '0vh'}}
+                        id="logoImage"
                         src={require('../../assets/logo.png')} alt='Adr-logo' />
                 </a>
                 {/* <div className="control" id="logo">ADR</div> */}

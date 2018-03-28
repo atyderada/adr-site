@@ -16,7 +16,7 @@
     margin: 0 0 -25px;
 }
 #logo {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 25px;
     transition: transform 0.4s;
@@ -25,10 +25,14 @@
     cursor: none;
     transform: scale(1.4);
 }
+#logoImag {
+    width: 25px;
+    height: 25px;
+}
 #home {
     top: 20px;
     right: 25px;
-    position: absolute;
+    position: fixed;
 }
 .control {
     z-index: 1;
@@ -163,6 +167,10 @@
     #logo {
         top: 30px;
         left: 40px;
+    }
+    #logoImag {
+        width: 35px;
+        height: 35px;
     }
     #home {
         top: 40px;

@@ -1,0 +1,56 @@
+#designContainer {
+    z-index: 1;
+    width: 100vw;
+    height: 270vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    justify-content: space-around;
+}
+#designProjectsGrid {
+    width: 100vw;
+    height: 260vh;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.control {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.card {
+    border: 2px solid;
+}
+.desktopProject {
+    grid-row: span 1;
+    grid-column: span 2;
+    border-color: darkred;
+}
+.mobileProject {
+    grid-row: span 2;
+    grid-column: span 2;
+    border-color: darkblue;
+}
+.multiProject {
+    grid-row: span 2;
+    grid-column: span 2;
+    border-color: black;
+    background-color: purple;
+}
+@media only screen and (min-width: 769px) {
+    .control:hover {
+        transform: scale(1.2);
+    }
+}

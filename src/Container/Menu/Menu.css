@@ -1,12 +1,13 @@
 #menuContainer {
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 #whiteBar {
     color: black;
-    height: 100px;
+    height: 9vh;
     width: 100vw;
     display: flex;
     letter-spacing: 6pt;
@@ -18,6 +19,7 @@
 #outerContainer {
     width: 100vw;
     height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     opacity: 0.95;
@@ -40,7 +42,6 @@
 }
 #layer {
     transition: all 1s;
-    /* animation: background-color 2s; */
 }
 #close {
     position: absolute;
@@ -56,30 +57,47 @@
     cursor: pointer;
     transition: transform 0.3s;
 }
+#menulogo {
+    z-index: 2;
+    position: absolute;
+    cursor: none;
+    top: 25px;
+    left: 25px;
+    transition: transform 0.4s;
+}
 @media only screen and (min-width: 769px) {
     /* For desktop: */
     #outerContainer {
         flex-direction: row;
         align-content: stretch;
+        background-color: white;
         justify-content: flex-start;
+    }
+    #menulogo {
+        top: 30px;
+        left: 40px;
+    }
+    #close {
+        top: 30px;
+        right: 35px;
     }
     .banner {
         transition: all 1s;
-        color: rgba(255, 255, 255, 0.5);
-        border-right: 0.1px solid rgba(255, 255, 255, 0.1);
-        border-left: 0.1px solid rgba(255, 255, 255, 0.1);
+        color: black;
+        /* border-left: 0.1px solid rgba(0, 0, 0, 0.1); */
+        /* border-right: 0.1px solid rgba(0, 0, 0, 0.1); */
     }
     #devBanner {
-        background-color: #1b1b1b;
+        background-color: #1b1b1b10;
     }
     #devBanner:hover {
-        background-color: rgba(0, 0, 0, 0.2);;
+        background-color: rgba(255, 255, 255, 0.1);
     }
     #designBanner {
-        background-color: #0b0b0b;
+        background-color: #0b0b0b10;
     }
     #designBanner:hover {
-        background-color: rgba(0, 0, 0, 0.1);;
+        background-color: rgba(255, 255, 255, 0.1);
     }
     .banner:hover {
         color: white;
@@ -88,5 +106,9 @@
     }
     .control:hover {
         transform: scale(1.2);
+    }
+    #menulogo:hover {
+        cursor: none;
+        transform: scale(1.3);
     }
 }
