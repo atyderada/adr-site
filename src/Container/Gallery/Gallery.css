@@ -49,7 +49,7 @@
     width: 85vw;
     height: 400vh;
     display: grid;
-    grid-gap: 3px;
+    grid-gap: 35px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }

@@ -13,7 +13,7 @@ const about = ( props ) => {
                 </svg>
             </div>
             <div id="top">
-                <span id="aboutTitle">About Me</span>
+                <span id="aboutTitle">About</span>
                 <div id="aboutPicture"></div>
                 <span id="aboutText">
                     Passionate, creative developer and designer. My favorite language is javascript and I use the adobe creative suite.
@@ -23,7 +23,7 @@ const about = ( props ) => {
                         <img id="boliviaImg" className="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
                     </a>
                     <a href="http://www.rose-hulman.edu/" target="_blank">
-                        <img id="roseImg" className="aboutIcon" src={require('../../assets/rose-hulman.png')} alt="Rose Hulman Icon" />
+                        <img id="roseImg" className="aboutIcon" src={require('../../assets/Rose-Logo.png')} alt="Rose Hulman Icon" />
                     </a>
                 </div>
             </div>

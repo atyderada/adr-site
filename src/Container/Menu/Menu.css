@@ -6,84 +6,74 @@
     flex-direction: column;
 }
 #whiteBar {
-    color: black;
-    height: 9vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
+    color: black;
     letter-spacing: 6pt;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     background-color: white;
+    justify-content: space-between;
 }
 #outerContainer {
     width: 100vw;
     height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
     opacity: 0.95;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
     background-color: black;
     justify-content: flex-start;
 }
 .banner {
-    cursor: pointer;
     width: 100%;
-    height: 100%;
+    height: 45vh;
     display: flex;
-    transition: all 1s;
     align-items: center;
     letter-spacing: 2.5pt;
     flex-direction: column;
     justify-content: space-around;
-    background-color: transparent;
     color: rgba(255, 255, 255, 0.9);
     border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+#devBanner {
+    /* background-color: #2B6EB2; */
+    background-color: #1B438F
+}
+#designBanner {
+    background-color: #C52E30;
+    /* background-color: #D22D40 */
 }
 #layer {
     transition: all 1s;
 }
 #close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
-.control {
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
+    border-radius: 50%;
+    margin-right: 25px;
     transition: transform 0.3s;
 }
 #menulogo {
-    z-index: 2;
-    position: absolute;
     cursor: none;
-    top: 25px;
-    left: 25px;
+    margin-left: 30px;
     transition: transform 0.4s;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
     /* For desktop: */
     #outerContainer {
         flex-direction: row;
-        align-content: stretch;
         background-color: white;
         justify-content: flex-start;
     }
-    #menulogo {
-        top: 30px;
-        left: 40px;
-    }
-    #close {
-        top: 30px;
-        right: 35px;
-    }
     .banner {
-        transition: all 1s;
+        height: 100%;
         color: black;
+        cursor: pointer;
+        transition: all 1s;
+        background-color: transparent;
         /* border-left: 0.1px solid rgba(0, 0, 0, 0.1); */
         /* border-right: 0.1px solid rgba(0, 0, 0, 0.1); */
     }
@@ -104,8 +94,16 @@
         font-size: 16pt;
         letter-spacing: 3.5pt;
     }
-    .control:hover {
+    #close {
+        width: 24px;
+        height: 24px;
+        margin-right: 55px;
+    }
+    #close:hover {
         transform: scale(1.2);
+    }
+    #menulogo {
+        margin-left: 50px;
     }
     #menulogo:hover {
         cursor: none;

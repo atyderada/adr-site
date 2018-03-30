@@ -18,10 +18,10 @@
     cursor: pointer;
 }
 #top {
-    width: 70vw;
+    width: 80vw;
     height: 80vh;
     display: flex;
-    padding: 0 15vw;
+    padding: 0 10vw;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -29,14 +29,25 @@
     background-color: white;
 }
 #aboutTitle {
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: 600;
-    letter-spacing: 1pt;
-    margin-bottom: 3vh;
+    letter-spacing: 2pt;
+    margin-bottom: 4vh;
+}
+#aboutPicture {
+    width: 140px;
+    height: 140px;
+    border-width: 1px;
+    margin-bottom: 5vh;
+    border-radius: 50%;
+    background-size: cover;
+    background-position:center center;
+    background-image: url('../../assets/images/ProfilePicture.jpg');
 }
 #aboutText {
     font-size: 10pt;
     line-height: 28pt;
+    margin-bottom: 6vh;
 }
 #iconsContainer {
     width: 100%;
@@ -45,9 +56,9 @@
     justify-content: space-around;
 }
 .aboutIcon {
-    width: 50px;
-    height: 50px;
-    transition: all 1s ease-out;
+    width: 40px;
+    height: 45px;
+    transition: all 0.9s ease-out;
 }
 #bottom {
     opacity: 0.9;
@@ -89,11 +100,6 @@
     height: 24px;
     opacity: 0.6;
     cursor: pointer;
-    transition: all 0.4s;
-}
-.iconButton:hover {
-    opacity: 1;
-    transform: scale(1.4);
 }
 @-webkit-keyframes slide-in {
     100% { top: 0 }
@@ -101,36 +107,48 @@
 @keyframes slide-in {
     100% { top: 0 }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 750px) {
     /* For desktop: */
     #top {
-        width: 80vw;
-        padding: 0 10vw;
+        width: 70vw;
+        padding: 0 15vw;
     }
     #topArrow:hover {
         transform: scale(1.2) translateY(-8px);
     }
     #aboutTitle {
-        font-size: 20pt;
+        font-size: 22pt;
         font-weight: 500;
         letter-spacing: 3pt;
-        margin-bottom: 30px;
+        margin-bottom: 5vh;
     }
     #aboutPicture {
-        border-radius: 50%;
         width: 200px;
         height: 200px;
-        margin-bottom: 45px;
-        border-width: 1px;
-        background-color: #bbb;
+        margin-bottom: 6vh;
     }
     #iconsContainer {
-        margin-top: 40px;
-        margin-bottom: 10px;
+        margin-bottom: 2vh;
+    }
+    .aboutIcon {
+        width: 60px;
+        height: 70px;
     }
     #aboutText {
-        font-size: 15pt;
+        font-size: 14pt;
         line-height: 40pt;
+        margin-bottom: 6vh;
+    }
+    .iconButton {
+        width: 30px;
+        height: 30px;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    .iconButton:hover {
+        opacity: 1;
+        transform: scale(1.4);
     }
     #roseImg:hover {
         transform: scale(1.5) rotate(-360deg);

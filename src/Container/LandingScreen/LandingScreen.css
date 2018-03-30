@@ -125,11 +125,12 @@
     transition: all 0.4s;
 }
 #gallery {
+    transform: rotate(-90deg);
     position: absolute;
-    bottom: 0px;
-    left: 25px;
+    bottom: 35px;
+    left: 35px;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 10px;
     transition: all 0.4s;
 }
 #lanlogo {
@@ -158,7 +159,7 @@
 @keyframes slide-in {
     100% { top: 0 } 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
     /* For desktop: */
     #title {
         height: 42px;
@@ -190,7 +191,6 @@
         right: 50%;
     }
     #gallery {
-        transform: rotate(-90deg);
         position: absolute;
         letter-spacing: 1pt;
         bottom: 45px;
