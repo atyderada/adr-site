@@ -13,7 +13,7 @@ const design = (props) => {
             <div id="desProjectsGrid">
                 <div style={{
                     gridArea: '1 / 4 / 2 / 6'
-                }}><br/><br/><h1>Design</h1></div>
+                }}><br/><br/><h2>Design</h2></div>
                 
                 <div style={{
                         gridArea: '2 / 2 / 4 / 5'}}

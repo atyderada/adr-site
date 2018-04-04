@@ -52,34 +52,34 @@ class Gallery extends React.Component {
                 <div id="imageContainer">
                     {/* <LazyImage className="box" src='../../assets/images/DarkSunset.jpg'></LazyImage> */}
                     <div className="box" onClick={() => this.togglePopup("DarkSunset.jpg")}>
-                        <div class="picDescription"><h3>Blue Dusk</h3><h4>- Uyuni Salt Flats</h4></div>
+                        <div className="picDescription"><h3>Blue Dusk</h3><h4>- Uyuni Salt Flats</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("FlyingTrain.JPG")}>
-                        <div class="picDescription"><h3>Flying Train</h3><h4>@Uyuni Train Cemetery</h4></div>
+                        <div className="picDescription"><h3>Flying Train</h3><h4>@Uyuni Train Cemetery</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("GoldenDawn.JPG")}>
-                        <div class="picDescription"><h3>Golden Sunset</h3><h4>@Uyuni Salt Flats</h4></div>
+                        <div className="picDescription"><h3>Golden Sunset</h3><h4>@Uyuni Salt Flats</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("Sunset.JPG")}>
-                        <div class="picDescription"><h3>Burning Dawn</h3><h4>@Uyuni Salt Flats</h4></div>
+                        <div className="picDescription"><h3>Burning Dawn</h3><h4>@Uyuni Salt Flats</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("Illimani.jpg")}>
-                        <div class="picDescription"><h3>Illimani</h3><h4>@Hotel Alkamari</h4></div>
+                        <div className="picDescription"><h3>Illimani</h3><h4>@Hotel Alkamari</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("Gaudi1.jpg")}>
-                        <div class="picDescription"><h3>Blue Gingerbread House</h3><h4>@Park Güell</h4></div>
+                        <div className="picDescription"><h3>Blue Gingerbread House</h3><h4>@Park Güell</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("Gaudi2.jpg")}>
-                        <div class="picDescription"><h3>Colored Gingerbread House</h3><h4>@Park Güell</h4></div>
+                        <div className="picDescription"><h3>Colored Gingerbread House</h3><h4>@Park Güell</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("UmedaSky.JPG")}>
-                        <div class="picDescription"><h3>Umeda Sky Building</h3><h4>@Osaka</h4></div>
+                        <div className="picDescription"><h3>Umeda Sky Building</h3><h4>@Osaka</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("NeedleBoat.JPG")}>
-                        <div class="picDescription"><h3>Floating Sky Tree</h3><h4>@Tokyo</h4></div>
+                        <div className="picDescription"><h3>Floating Sky Tree</h3><h4>@Tokyo</h4></div>
                     </div>
                     <div className="box" onClick={() => this.togglePopup("OneToOne.JPG")}>
-                        <div class="picDescription"><h3>One to One</h3><h4>@Yokohama</h4></div>
+                        <div className="picDescription"><h3>One to One</h3><h4>@Yokohama</h4></div>
                     </div>
                 </div>
                 {this.state.showPopup ? 
