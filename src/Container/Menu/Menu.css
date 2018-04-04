@@ -3,6 +3,7 @@
     height: 100vh;
     max-height: 100vh;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
 }
 #whiteBar {
@@ -38,12 +39,20 @@
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 #devBanner {
-    /* background-color: #2B6EB2; */
-    background-color: #1B438F
+    /* background-color: #1B438F; */
+    background-size: cover;
+    background-position:center center;
+    background-image: url('../../assets/TriangleB.png');
 }
 #designBanner {
-    background-color: #C52E30;
-    /* background-color: #D22D40 */
+    /* background-color: #C52E30; */
+    background-size: cover;
+    background-position:center center;
+    background-image: url('../../assets/WavesW.png');
+}
+#menuTitle {
+    font-size: 11pt;
+    font-weight: 550;
 }
 #layer {
     transition: all 1s;
@@ -72,27 +81,40 @@
         height: 100%;
         color: black;
         cursor: pointer;
-        transition: all 1s;
+        transition: all 0.6s;
         background-color: transparent;
         /* border-left: 0.1px solid rgba(0, 0, 0, 0.1); */
         /* border-right: 0.1px solid rgba(0, 0, 0, 0.1); */
     }
-    #devBanner {
+    #devBannerL {
         background-color: #1b1b1b10;
     }
-    #devBanner:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+    #devBannerL:hover {
+        opacity: 0.95;
+        letter-spacing: 3.5pt;
+        background-size: cover;
+        background-position:center center;
+        background-image: url('../../assets/TriangleB.png');
+        /* background-color: rgba(255, 255, 255, 0.1); */
     }
-    #designBanner {
+    #designBannerL {
         background-color: #0b0b0b10;
     }
-    #designBanner:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+    #menuTitle {
+        font-size: 14pt;
+        font-weight: 600;
+    }
+    #designBannerL:hover {
+        opacity: 0.95;
+        letter-spacing: 4pt;
+        background-size: cover;
+        background-position:center center;
+        background-image: url('../../assets/WavesW.png');
+        /* background-color: rgba(255, 255, 255, 0.1); */
     }
     .banner:hover {
         color: white;
         font-size: 16pt;
-        letter-spacing: 3.5pt;
     }
     #close {
         width: 24px;

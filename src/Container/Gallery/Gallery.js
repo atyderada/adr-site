@@ -1,7 +1,6 @@
 import React from 'react';
 import './Gallery.css';
 import PictureDetail from './PictureDetail/PictureDetail';
-import LazyImage from '../../Components/LazyImage/LazyImage';
 
 class Gallery extends React.Component {
 
@@ -25,6 +24,18 @@ class Gallery extends React.Component {
         });
     }
     render() {
+        var iconsStyle;
+        if (window.innerWidth > 750) {
+            iconsStyle = {
+                widht: 24+'px',
+                height: 24+'px'
+            }
+        } else {
+            iconsStyle = {
+                widht: 18+'px',
+                height: 18+'px'
+            }
+        }
         return (
             <div id="galleryContainer">
                 <a id="logo">
@@ -33,32 +44,43 @@ class Gallery extends React.Component {
                         src={require('../../assets/logo-inv.png')} alt='Adr-logo' />
                 </a>
                 <div className="control" id="home" onClick={() => this.props.toggle()} >
-                    <svg style={{width:24+'px',height:24+'px'}} viewBox="0 0 24 24">
-                        <path fill="#fff" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                    <svg style={iconsStyle} viewBox="0 0 24 24">
+                        <path fill="#000" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
                     </svg>
                 </div>
                 <div id="galleryTitle">GALLERY</div>
                 <div id="imageContainer">
-                    {/* <LazyImage className="box" src='../../assets/images/DarkSunset.jpg'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/FlyingTrain.JPG'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/GoldenDawn.JPG'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/Sunset.JPG'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/Illimani.jpg'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/Gaudi1.jpg'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/Gaudi2.jpg'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/UmedaSky.JPG'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/NeedleBoat.JPG'></LazyImage>
-                    <LazyImage className="box" src='../../assets/images/OneToOne.JPG'></LazyImage> */}
-                    <div className="box" onClick={() => this.togglePopup("DarkSunset.jpg")}></div>
-                    <div className="box" onClick={() => this.togglePopup("FlyingTrain.JPG")}></div>
-                    <div className="box" onClick={() => this.togglePopup("GoldenDawn.JPG")}></div>
-                    <div className="box" onClick={() => this.togglePopup("Sunset.JPG")}></div>
-                    <div className="box" onClick={() => this.togglePopup("Illimani.jpg")}></div>
-                    <div className="box" onClick={() => this.togglePopup("Gaudi1.jpg")}></div>
-                    <div className="box" onClick={() => this.togglePopup("Gaudi2.jpg")}></div>
-                    <div className="box" onClick={() => this.togglePopup("UmedaSky.JPG")}></div>
-                    <div className="box" onClick={() => this.togglePopup("NeedleBoat.JPG")}></div>
-                    <div className="box" onClick={() => this.togglePopup("OneToOne.JPG")}></div>
+                    {/* <LazyImage className="box" src='../../assets/images/DarkSunset.jpg'></LazyImage> */}
+                    <div className="box" onClick={() => this.togglePopup("DarkSunset.jpg")}>
+                        <div class="picDescription"><h3>Blue Dusk</h3><h4>- Uyuni Salt Flats</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("FlyingTrain.JPG")}>
+                        <div class="picDescription"><h3>Flying Train</h3><h4>@Uyuni Train Cemetery</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("GoldenDawn.JPG")}>
+                        <div class="picDescription"><h3>Golden Sunset</h3><h4>@Uyuni Salt Flats</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("Sunset.JPG")}>
+                        <div class="picDescription"><h3>Burning Dawn</h3><h4>@Uyuni Salt Flats</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("Illimani.jpg")}>
+                        <div class="picDescription"><h3>Illimani</h3><h4>@Hotel Alkamari</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("Gaudi1.jpg")}>
+                        <div class="picDescription"><h3>Blue Gingerbread House</h3><h4>@Park Güell</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("Gaudi2.jpg")}>
+                        <div class="picDescription"><h3>Colored Gingerbread House</h3><h4>@Park Güell</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("UmedaSky.JPG")}>
+                        <div class="picDescription"><h3>Umeda Sky Building</h3><h4>@Osaka</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("NeedleBoat.JPG")}>
+                        <div class="picDescription"><h3>Floating Sky Tree</h3><h4>@Tokyo</h4></div>
+                    </div>
+                    <div className="box" onClick={() => this.togglePopup("OneToOne.JPG")}>
+                        <div class="picDescription"><h3>One to One</h3><h4>@Yokohama</h4></div>
+                    </div>
                 </div>
                 {this.state.showPopup ? 
                 <PictureDetail

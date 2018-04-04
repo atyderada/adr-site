@@ -2,22 +2,22 @@
     z-index: 1;
     width: 100vw;
     height: 420vh;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: white;
     justify-content: space-around;
-    opacity: 0.95;
-    background-color: black;
+    /* opacity: 0.95; */
 }
 #galleryTitle {
     font-size: 14px;
-    letter-spacing: 8px;
     margin: 0 0 -25px;
+    letter-spacing: 8px;
 }
 #logo {
     position: fixed;
-    top: 20px;
+    top: 25px;
     left: 25px;
     transition: transform 0.4s;
 }
@@ -26,8 +26,8 @@
     transform: scale(1.4);
 }
 #logoImag {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }
 #home {
     top: 20px;
@@ -56,11 +56,23 @@
 .box {
     background-position:center center;
     background-color: white;
+    justify-content: flex-end;
     background-size: cover;
+    flex-direction: column;
     transition: all 0.4s;
     border-radius: 8px;
+    color: transparent;
     min-height: 90px;
     cursor: pointer;
+    display: flex;
+}
+.picDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 1s ease;
+    justify-content: space-around;
 }
 .box:nth-child(1) {
     -webkit-grid-column: span 2;
@@ -178,15 +190,16 @@
     }
     #imageContainer {
         grid-gap: 50px;
-        max-width: 1050px;
+        max-width: 1200px;
     }
     .box {
-        opacity: 0.65;
+        opacity: 0.95;
         min-height: 150px;
         transition: all 0.2s ease-out;
     }
     .box:hover {
         opacity: 1;
+        color: white;
         transform: scale(1.02);
         background-color: transparent;
     }

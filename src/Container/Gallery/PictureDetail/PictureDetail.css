@@ -4,9 +4,9 @@
     z-index: 2;
     width: 100%;
     height: 100%;
+    cursor: none;
     display: flex;
     position: fixed;
-    cursor: none;
     align-items: center;
     animation-name: fade;
     flex-direction: column;
@@ -15,6 +15,24 @@
     animation-timing-function: ease-in-out;
     background-color: rgba(0, 0, 0, 0.9);
 }
+#toast {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-size: 16pt;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    animation-duration: 2s;
+    justify-content: center;
+    animation-timing-function: ease;
+    animation-name: dissapear;
+}
 #shineContainer {
     animation-timing-function: ease;
     animation-duration: 0.5s;
@@ -22,6 +40,7 @@
     border-radius: 16px;
     height: 90%;
     width: 90%;
+    position: absolute;
 }
 #pictureContainer {
     /* background-color: rgba(255, 255, 255, 0.8); */
@@ -34,6 +53,11 @@
     opacity: 0.9;
     height: 100%;
     width: 100%;
+}
+@keyframes dissapear {
+    0% { opacity: 0 }
+    60% { opacity: 1 }
+    100% { opacity: 0 }
 }
 @keyframes fade {
     from {background-color: rgba(0, 0, 0, 0.8);}
