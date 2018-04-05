@@ -1,7 +1,7 @@
 #desContainer {
     z-index: 1;
     width: 100vw;
-    height: 300vh;
+    height: 350vh;
     display: flex;
     color: black;
     align-items: center;
@@ -15,8 +15,8 @@
     height: 100%;
     display: grid;
     grid-gap: 25px;
-    grid-template-rows: 100px repeat(10, 1fr) 50px;
-    grid-template-columns: 30px repeat(6, 1fr) 30px;
+    grid-template-rows: 70px repeat(10, 1fr) 30px;
+    grid-template-columns: 20px 1fr 20px;
 }
 .control {
     z-index: 2;
@@ -33,12 +33,11 @@
     transition: all 0.4s;
     width: 100%;
     height: 100%;
-    cursor: none;
 }
 #back {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 10px;
 }
 .designCard {
     border-radius: 12pt;
@@ -56,7 +55,25 @@
 #eighth {background-image: url('../../assets/MomentB.png');}
 #ninth {background-image: url('../../assets/TheKillersTextures.png');}
 #tenth {background-image: url('../../assets/TheKillersBW.png');}
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+    #desContainer {
+        height: 520vh;
+    }
+    #desProjectsGrid {
+        grid-gap: 25px;
+        grid-template-rows: 80px repeat(10, 1fr) 50px;
+        grid-template-columns: 25px 1fr 25px;
+    }
+    #back {
+        position: fixed;
+        top: 35px;
+        right: 35px;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    #desContainer {
+        height: 300vh;
+    }
     #desProjectsGrid {
         grid-gap: 70px;
         grid-template-rows: 100px repeat(10, 1fr) 100px;

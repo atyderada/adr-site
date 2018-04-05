@@ -3,6 +3,10 @@ import './Development.css';
 
 const development = (props) => {
 
+    let title = <div style={{gridArea: '1 / 3 / 1 / 6'}}><br/><h3>Development</h3></div>
+    if (window.innerWidth > 768) {
+        title = <div style={{gridArea: '1 / 4 / 1 / 6'}}><br/><br/><h2>Development</h2></div>
+    }
     return (
         <div id='devContainer'>
             <div className="control" id="back" onClick={() => props.toggle()}>
@@ -11,8 +15,7 @@ const development = (props) => {
                 </svg>
             </div>
             <div id="devProjectsGrid">
-                <div style={{gridArea: '1 / 4 / 2 / 6'}}><br/><br/><h2>Development</h2></div>
-                
+                {title}
                 <div style={{gridArea: '2 / 2 / 5 / 8'}} className="card">
                     <div id="one" className="cardPic"></div>
                     {/* <div id="third" className="cardDesc"></div> */}

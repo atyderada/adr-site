@@ -1,7 +1,7 @@
 #devContainer {
     z-index: 1;
     width: 100vw;
-    height: 250vh;
+    height: 260vh;
     display: flex;
     color: black;
     align-items: center;
@@ -15,8 +15,8 @@
     height: 100%;
     display: grid;
     grid-gap: 25px;
-    grid-template-rows: 100px repeat(22, 1fr) 50px;
-    grid-template-columns: 30px repeat(6, 1fr) 30px;
+    grid-template-rows: 70px repeat(22, 1fr) 30px;
+    grid-template-columns: 20px repeat(6, 1fr) 20px;
 }
 .control {
     z-index: 2;
@@ -29,8 +29,8 @@
 }
 #back {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 10px;
 }
 .card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -55,7 +55,22 @@
 #eight {background-image: url('../../assets/RHfIT.png');}
 #nine {background-image: url('../../assets/MapBrothers.png');}
 #ten {background-image: url('../../assets/Centipede.png');}
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+    #devContainer {
+        height: 400vh;
+    }
+    #back {
+        position: fixed;
+        top: 35px;
+        right: 35px;
+    }
+    #devProjectsGrid {
+        grid-gap: 30px;
+    grid-template-rows: 100px repeat(22, 1fr) 30px;
+    grid-template-columns: 30px repeat(6, 1fr) 30px;
+    }
+}
+@media only screen and (min-width: 1025px) {
     #devContainer {
         height: 620vh;
     }

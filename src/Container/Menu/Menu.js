@@ -28,7 +28,7 @@ class Menu extends Component {
     }
     render() {
         var iconsStyle;
-        if (window.innerWidth > 750) {
+        if (window.innerWidth > 768) {
             iconsStyle = {
                 widht: 24+'px',
                 height: 24+'px'
@@ -44,7 +44,7 @@ class Menu extends Component {
                     <div id="devBanner" className="banner" onClick={() => this.props.showDev()}><h3>Development</h3></div>
                     <div id="designBanner" className="banner" onClick={() => this.props.showDes()}><h3>Design</h3></div>
                 </div>
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1024) {
             content = 
                 <div id="outerContainer">
                     <HoverBox hover={this.onHoverDev}>
