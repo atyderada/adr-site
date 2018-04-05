@@ -8,11 +8,28 @@ const development = (props) => {
     if (window.innerWidth > 768) {
         title = <div style={{gridArea: '1 / 4 / 1 / 6'}}><br/><br/><h2>Development</h2></div>
     }
+    let iconsStyle;
+    if (window.innerWidth > 768) {
+        iconsStyle = {
+            widht: 24+'px',
+            height: 24+'px'
+        }
+    } else {
+        iconsStyle = {
+            widht: 18+'px',
+            height: 18+'px'
+        }
+    }
     return (
         <div id='devContainer'>
+            <div id="devLogo">
+                <img
+                    id="logoImage"
+                    src={require('../../assets/logo.png')} alt='Adr-logo' />
+            </div>
             <Link to='/projects'>
-                <div className="control" id="back">
-                    <svg style={{width:24+'px',height:24+'px'}} viewBox="0 0 24 24">
+                <div className="control" id="devBack">
+                    <svg style={iconsStyle} viewBox="0 0 24 24">
                         <path fill="#000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
                     </svg>
                 </div>

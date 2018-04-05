@@ -42,7 +42,7 @@ class Gallery extends React.Component {
                 <a id="logo">
                     <img
                         id="logoImag"
-                        src={require('../../assets/logo-inv.png')} alt='Adr-logo' />
+                        src={require('../../assets/logo.png')} alt='Adr-logo' />
                 </a>
                 <Link to='/'>
                     <div className="control" id="home">

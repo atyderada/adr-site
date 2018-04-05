@@ -84,11 +84,11 @@ const landing = ( props ) => {
         <div>
             <div className="rain front-row">{drops}</div>
             <div className="controllers">
-                <a id="lanlogo">
+                <div id="lanlogo">
                     <img
                         id="logoImage"
                         src={require('../../assets/logo.png')} alt='Adr-logo' />
-                </a>
+                </div>
                 <Link to='/projects'>
                     <div className="control" id="menu">
                         <svg style={iconsStyle} viewBox="0 0 24 24">

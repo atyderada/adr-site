@@ -5,11 +5,26 @@ import { Link } from 'react-router-dom';
 const about = ( props ) => {
 
     let iconsStyle;
+    let extra;
     if (window.innerWidth > 750) {
         iconsStyle = {
             widht: 24+'px',
             height: 24+'px'
         }
+        extra = 
+            <div className="aboutExtra">
+                <div className="aboutText">
+                    <span>I will be graduating from Rose-Hulman in May 2018</span> <a href="http://www.rose-hulman.edu/" target="_blank" rel="noopener noreferrer">
+                        <img id="roseImg" className="aboutIcon" src={require('../../assets/Rose-Logo.png')} alt="Rose Hulman Icon" />
+                    </a>
+                    I am from the vibrant city of La Paz, Bolivia  <a href="https://www.youtube.com/playlist?list=PLFTQSQOjNIfNKpVekjwU3pzDtlZBKVYp3" target="_blank" rel="noopener noreferrer">
+                        <img id="boliviaImg" className="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
+                    </a>
+                    My favorite things are food, music, travel and photography.
+                    Feel free to check out the links bellow or contact me through email.
+                    Have a great day!
+                </div>
+            </div>
     } else {
         iconsStyle = {
             widht: 18+'px',
@@ -33,8 +48,6 @@ const about = ( props ) => {
                 <div className="wave wave_5"></div>
             </div>
             <div id="bottom">
-                {/* <div id="backBottom"></div>
-                <div id="middleBottom"></div> */}
                 <div id="footer">
                     <a href="https://github.com/atyderada" target="_blank" rel="noopener noreferrer">
                         <svg className="iconButton" viewBox="0 0 24 24">
@@ -55,18 +68,16 @@ const about = ( props ) => {
             </div>
             <div id="top">
                 <span id="aboutTitle">About</span>
-                <div id="aboutPicture"></div>
-                <span id="aboutText">
-                    Passionate, creative developer and designer. My favorite language is javascript and I use the adobe creative suite.
-                </span>
-                <div id="iconsContainer">
-                    <a href="https://www.youtube.com/playlist?list=PLFTQSQOjNIfNKpVekjwU3pzDtlZBKVYp3" target="_blank" rel="noopener noreferrer">
-                        <img id="boliviaImg" className="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
-                    </a>
-                    <a href="http://www.rose-hulman.edu/" target="_blank" rel="noopener noreferrer">
-                        <img id="roseImg" className="aboutIcon" src={require('../../assets/Rose-Logo.png')} alt="Rose Hulman Icon" />
-                    </a>
+                <div className="aboutInner">
+                    <div id="aboutPicture"></div>
+                    <span className="aboutText">
+                        Hey There!
+                        I'm a Computer Science student with an edge for Web/Mobile Application Design and Development.
+                        I love designing beautiful interfaces and implementing them into smooth and engaging Applications.
+                        I use the adobe creative suite and mostly Javascript/Typescript.
+                    </span>
                 </div>
+                {extra}
             </div>
         </div>
     );

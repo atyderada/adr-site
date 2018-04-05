@@ -63,11 +63,11 @@ class Menu extends Component {
             <div id="menuContainer">
                 <HoverBox hover={this.onHoverBar}>
                     <div id="whiteBar">
-                        <a id="menulogo">
+                        <div id="menulogo">
                             <img
                                 id="logoImage"
                                 src={require('../../assets/logo.png')} alt='Adr-logo' />
-                        </a>
+                        </div>
                         <div id="menuTitle">PROJECTS</div>
                         <Link to='/'>
                             <div id="close">

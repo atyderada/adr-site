@@ -27,10 +27,16 @@
     cursor: pointer;
     transition: transform 0.3s;
 }
-#back {
+#devBack {
     position: fixed;
     top: 20px;
     right: 10px;
+}
+#devLogo {
+    cursor: none;
+    position: fixed;
+    left: 20px;
+    top: 25px;
 }
 .card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -59,15 +65,18 @@
     #devContainer {
         height: 400vh;
     }
-    #back {
-        position: fixed;
+    #devBack {
+        top: 26px;
+        right: 18px;
+    }
+    #devLogo {
+        left: 25px;
         top: 35px;
-        right: 35px;
     }
     #devProjectsGrid {
         grid-gap: 30px;
-    grid-template-rows: 100px repeat(22, 1fr) 30px;
-    grid-template-columns: 30px repeat(6, 1fr) 30px;
+        grid-template-rows: 100px repeat(22, 1fr) 30px;
+        grid-template-columns: 35px repeat(6, 1fr) 35px;
     }
 }
 @media only screen and (min-width: 1025px) {
@@ -87,5 +96,14 @@
     }
     .cardPic:hover {
         transform: scale(1.07);
+    }
+    #devLogo {
+        left: 40px;
+        top: 40px;
+        transition: transform 0.4s;
+    }
+    #devLogo:hover {
+        cursor: none;
+        transform: scale(1.3);
     }
 }
