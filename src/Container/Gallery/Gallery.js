@@ -1,6 +1,7 @@
 import React from 'react';
 import './Gallery.css';
 import PictureDetail from './PictureDetail/PictureDetail';
+import { Link } from 'react-router-dom';
 
 class Gallery extends React.Component {
 
@@ -43,11 +44,13 @@ class Gallery extends React.Component {
                         id="logoImag"
                         src={require('../../assets/logo-inv.png')} alt='Adr-logo' />
                 </a>
-                <div className="control" id="home" onClick={() => this.props.toggle()} >
-                    <svg style={iconsStyle} viewBox="0 0 24 24">
-                        <path fill="#000" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
-                    </svg>
-                </div>
+                <Link to='/'>
+                    <div className="control" id="home">
+                        <svg style={iconsStyle} viewBox="0 0 24 24">
+                            <path fill="#000" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                        </svg>
+                    </div>
+                </Link>
                 <div id="galleryTitle">GALLERY</div>
                 <div id="imageContainer">
                     {/* <LazyImage className="box" src='../../assets/images/DarkSunset.jpg'></LazyImage> */}
