@@ -111,11 +111,13 @@ const design = (props) => {
     return (
         <div id='desContainer'>
             {grid}
-            <div id="desLogo">
-                <img
-                    id="logoImage"
-                    src={require('../../assets/logo.png')} alt='Adr-logo' />
-            </div>
+            <Link to='/'>
+                <div id="desLogo">
+                    <img
+                        id="logoImage"
+                        src={require('../../assets/logo.png')} alt='Adr-logo' />
+                </div>
+            </Link>
             <Link to='/projects'>
                 <div className="control" id="desBack">
                     <svg style={iconsStyle} viewBox="0 0 24 24">

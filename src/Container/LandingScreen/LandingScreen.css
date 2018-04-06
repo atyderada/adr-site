@@ -131,13 +131,13 @@
     left: 45px;
     font-size: 8pt;
     line-height: 8pt;
-    transition: all 0.4s;
+    transition: all 0.4s ease;
 }
 #lanlogo {
     position: absolute;
     top: 28px;
     left: 28px;
-    transition: transform 0.4s;
+    transition: all 0.4s ease;
 }
 #logoImage {
     width: 22px;

@@ -40,6 +40,13 @@ const about = ( props ) => {
                     </svg>
                 </div>
             </Link>
+            <Link to=''>
+                <div id="aboutlogo">
+                    <img
+                        id="logoImage"
+                        src={require('../../assets/logo.png')} alt='Adr-logo' />
+                </div>
+            </Link>
             <div id="waves">
                 <div className="wave wave_1"></div>
                 <div className="wave wave_2"></div>
