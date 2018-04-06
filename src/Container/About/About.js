@@ -47,6 +47,19 @@ const about = ( props ) => {
                 <div className="wave wave_4"></div>
                 <div className="wave wave_5"></div>
             </div>
+            <div id="top">
+                <span id="aboutTitle">About</span>
+                <div className="aboutInner">
+                    <div id="aboutPicture"></div>
+                    <span className="aboutText">
+                        Hey There!
+                        I'm a Computer Science student with an edge for Web/Mobile Application Design and Development.
+                        I love designing clean interfaces and implementing them into smooth and engaging Applications.
+                        I use the adobe creative suite and mostly Javascript/Typescript.
+                    </span>
+                </div>
+                {extra}
+            </div>
             <div id="bottom">
                 <div id="footer">
                     <a href="https://github.com/atyderada" target="_blank" rel="noopener noreferrer">
@@ -65,19 +78,6 @@ const about = ( props ) => {
                         </svg>
                     </a>
                 </div>
-            </div>
-            <div id="top">
-                <span id="aboutTitle">About</span>
-                <div className="aboutInner">
-                    <div id="aboutPicture"></div>
-                    <span className="aboutText">
-                        Hey There!
-                        I'm a Computer Science student with an edge for Web/Mobile Application Design and Development.
-                        I love designing clean interfaces and implementing them into smooth and engaging Applications.
-                        I use the adobe creative suite and mostly Javascript/Typescript.
-                    </span>
-                </div>
-                {extra}
             </div>
         </div>
     );

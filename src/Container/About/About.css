@@ -49,7 +49,7 @@
     font-size: 16pt;
     font-weight: 600;
     letter-spacing: 2pt;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 #aboutPicture {
     min-width: 150px;
@@ -266,7 +266,7 @@
         font-weight: 500;
     }
     .aboutInner {
-        flex-direction: column;
+        flex-direction: row;
         margin-bottom: 50px;
     }
     .iconButton {

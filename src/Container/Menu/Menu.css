@@ -32,6 +32,7 @@
     height: 45vh;
     display: flex;
     align-items: center;
+    text-decoration: none !important;
     letter-spacing: 2.5pt;
     flex-direction: column;
     justify-content: space-around;
@@ -66,7 +67,7 @@
     transition: transform 0.3s;
 }
 #menulogo {
-    cursor: none;
+    cursor: pointer;
     margin-left: 30px;
     transition: transform 0.4s;
 }
@@ -128,7 +129,6 @@
         margin-left: 50px;
     }
     #menulogo:hover {
-        cursor: none;
         transform: scale(1.3);
     }
 }

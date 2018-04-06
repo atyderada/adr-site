@@ -34,10 +34,10 @@ class Menu extends Component {
         }
         let content =
                 <div id="outerContainer">
-                    <Link to='/development'>
+                    <Link to='/development' style={{ textDecoration: 'none' }}>
                         <div id="devBanner" className="banner"><h3>Development</h3></div>
                     </Link>
-                    <Link to='/design'>
+                    <Link to='/design' style={{ textDecoration: 'none' }}>
                         <div id="designBanner" className="banner"><h3>Design</h3></div>
                     </Link>
                 </div>
@@ -45,12 +45,12 @@ class Menu extends Component {
             content = 
                 <div id="outerContainer">
                     <HoverBox hover={this.onHoverDev}>
-                        <Link to='/development'>
+                        <Link to='/development' style={{ textDecoration: 'none' }}>
                             <div id="devBannerL" className="banner"><h3>Development</h3></div>
                         </Link>
                     </HoverBox>
                     <HoverBox hover={this.onHoverDesign}>
-                        <Link to='/design'>
+                        <Link to='/design' style={{ textDecoration: 'none' }}>
                             <div id="designBannerL" className="banner"><h3>Design</h3></div>
                         </Link>
                     </HoverBox>
@@ -63,11 +63,13 @@ class Menu extends Component {
             <div id="menuContainer">
                 <HoverBox hover={this.onHoverBar}>
                     <div id="whiteBar">
-                        <div id="menulogo">
-                            <img
-                                id="logoImage"
-                                src={require('../../assets/logo.png')} alt='Adr-logo' />
-                        </div>
+                        <Link to='/'>
+                            <div id="menulogo">
+                                <img
+                                    id="logoImage"
+                                    src={require('../../assets/logo.png')} alt='Adr-logo' />
+                            </div>
+                        </Link>
                         <div id="menuTitle">PROJECTS</div>
                         <Link to='/'>
                             <div id="close">

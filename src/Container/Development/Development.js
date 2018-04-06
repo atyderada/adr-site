@@ -30,11 +30,13 @@ const development = (props) => {
     }
     return (
         <div id='devContainer'>
-            <div id="devLogo">
-                <img
-                    id="logoImage"
-                    src={require('../../assets/logo.png')} alt='Adr-logo' />
-            </div>
+            <Link to='/'>
+                <div id="devLogo">
+                    <img
+                        id="logoImage"
+                        src={require('../../assets/logo.png')} alt='Adr-logo' />
+                </div>
+            </Link>
             <Link to='/projects'>
                 <div className="control" id="devBack">
                     <svg style={iconsStyle} viewBox="0 0 24 24">
@@ -90,7 +92,7 @@ const development = (props) => {
                             <div className="projectStack">
                                 <span>What Did we use: Angular5, Firebase</span>
                                 <span>What Did I learn: D3.js, Google Cloud Platform, Cloud Firestore</span>
-                                <span>Where Did I improve: Angular/Firebase skills, Full-stack Development, UI/UX design</span>
+                                <span>Where Did I improve: Angular/Firebase skills, Full-stack development, UI/UX design</span>
                             </div>
                             <div className="projectLinks">
                                 <a className="projectLink" href="https://bitbucket.org/realtimesense/realtimesenserepo" target="_blank" rel="noopener noreferrer">
@@ -118,7 +120,7 @@ const development = (props) => {
                         </div>
                         <div className="projectBottom">
                             <div className="projectDescription">
-                                Web application that provides students from all levels resources to learn to code.
+                                Web application that provides students from all levels with resources to learn to code.
                                 Worked on a team of 2 prototyping interactive pages and implementing them into project.
                             </div>
                             <div className="projectStack">
@@ -180,7 +182,7 @@ const development = (props) => {
                         </div>
                         <div className="projectBottomSmall">
                             <div className="projectDescription">
-                                Productivy app based mobile application for small business to grow their brand and customer base.
+                                Productivy app that lets you keep your notes/reminders/alarms all in the same place. Worked on a team of 2 developing the idea and implementing it.
                             </div>
                             <div className="projectStack">
                                 <span>What Did I use: Java, Firebase, Android Studio</span>

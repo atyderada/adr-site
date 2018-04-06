@@ -39,11 +39,13 @@ class Gallery extends React.Component {
         }
         return (
             <div id="galleryContainer">
-                <a id="logo">
-                    <img
-                        id="logoImag"
-                        src={require('../../assets/logo.png')} alt='Adr-logo' />
-                </a>
+                <Link to='/'>
+                    <div id="logo">
+                        <img
+                            id="logoImag"
+                            src={require('../../assets/logo.png')} alt='Adr-logo' />
+                    </div>
+                </Link>
                 <Link to='/'>
                     <div className="control" id="home">
                         <svg style={iconsStyle} viewBox="0 0 24 24">

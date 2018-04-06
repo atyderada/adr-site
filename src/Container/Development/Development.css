@@ -32,7 +32,7 @@
     right: 10px;
 }
 #devLogo {
-    cursor: none;
+    cursor: pointer;
     position: fixed;
     left: 20px;
     top: 25px;
@@ -71,16 +71,6 @@
     justify-content: flex-end;
     background-color: transparent;
 }
-.projectTitle {
-    height: 22px;
-    color: black;
-    font-size: 9pt;
-    font-weight: 500;
-    line-height: 22px;
-    text-align: center;
-    margin-bottom: 6px;
-    letter-spacing: 1.5pt;
-}
 .projectBottom {
     width: 80%;
     height: 100%;
@@ -107,14 +97,24 @@
     transition: all 1s ease;
     justify-content: space-around;
 }
-.projectTitleSmall {
-    height: 20px;
+.projectTitle {
+    height: 22px;
     color: black;
-    font-size: 8pt;
+    font-size: 9pt;
     font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 6px;
-    letter-spacing: 1.4pt;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 1.5pt;
+}
+.projectTitleSmall {
+    height: 18px;
+    color: black;
+    font-size: 7pt;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 2px;
+    letter-spacing: 1.2pt;
 }
 .projectSubtitle {
     height: 15px;
@@ -127,12 +127,12 @@
     margin-bottom: 20px;
 }
 .projectSubtitleSmall {
-    height: 14px;
+    height: 12px;
     font-weight: 420;    
-    line-height: 14px;
+    line-height: 12px;
     font-size: 5.5pt;
-    margin-bottom: 19px;
-    letter-spacing: 0.75pt;
+    margin-bottom: 8px;
+    letter-spacing: 0.7pt;
 }
 .projectStack {
     display: flex;
@@ -232,6 +232,10 @@
         grid-template-rows: 100px repeat(22, 1fr) 100px;
         grid-template-columns: 90px repeat(6, 1fr) 90px;
     }
+    #devBack {
+        top: 50px;
+        right: 40px;
+    }
     .card {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
@@ -300,7 +304,6 @@
         transition: transform 0.4s;
     }
     #devLogo:hover {
-        cursor: none;
         transform: scale(1.3);
     }
     .projectLink:hover .linkButton {

@@ -16,13 +16,13 @@
     letter-spacing: 8px;
 }
 #logo {
+    cursor: pointer;
     position: fixed;
     top: 25px;
     left: 32px;
     transition: transform 0.4s;
 }
 #logo:hover {
-    cursor: none;
     transform: scale(1.4);
 }
 #logoImag {
