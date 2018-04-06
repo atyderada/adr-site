@@ -1,7 +1,6 @@
 #devContainer {
-    z-index: 1;
     width: 100vw;
-    height: 260vh;
+    height: 300vh;
     display: flex;
     color: black;
     align-items: center;
@@ -41,15 +40,130 @@
 .card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color: white;
+    transition: all 1s ease;
     border-radius: 12pt;
     overflow: hidden;
+    position: relative;
 }
 .cardPic {
     background-position:center center;
     background-size: cover;
-    transition: all 1.2s ease;
+    transition: all 1s ease;
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+}
+.cardDesc {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.99;
+    display: flex;
+    user-select: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s ease;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+.projectTitle {
+    height: 22px;
+    color: black;
+    font-size: 9pt;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: 1.5pt;
+}
+.projectBottom {
+    width: 80%;
+    height: 100%;
+    display: none;
+    font-size: 12pt;
+    line-height: 24pt;
+    margin-bottom: 12vh;
+    letter-spacing: 1pt;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s ease;
+    justify-content: space-around;
+}
+.projectBottomSmall {
+    width: 85%;
+    height: 100%;
+    display: none;
+    font-size: 10pt;
+    line-height: 20pt;
+    margin-bottom: 12px;
+    letter-spacing: 1pt;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s ease;
+    justify-content: space-around;
+}
+.projectTitleSmall {
+    height: 20px;
+    color: black;
+    font-size: 8pt;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 6px;
+    letter-spacing: 1.4pt;
+}
+.projectSubtitle {
+    height: 15px;
+    color: black;
+    font-weight: 420;    
+    line-height: 15px;
+    font-size: 6pt;
+    text-align: center;
+    letter-spacing: 0.8pt;
+    margin-bottom: 20px;
+}
+.projectSubtitleSmall {
+    height: 14px;
+    font-weight: 420;    
+    line-height: 14px;
+    font-size: 5.5pt;
+    margin-bottom: 19px;
+    letter-spacing: 0.75pt;
+}
+.projectStack {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.projectLinks {
+    width: 70%;
+    display: flex;
+    font-size: 11pt;
+    font-weight: 500;
+    line-height: 11pt;
+    letter-spacing: 1pt;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.projectLink {
+    height: 60px;
+    display: flex;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    transition: all 1s ease;
+    justify-content: space-around;
+}
+.linkButton {
+    opacity: 0.9;
+    transition: all 0.6s ease;
 }
 #one {background-image: url('../../assets/PortfolioSite.png');}
 #two {background-image: url('../../assets/RealTimeSense.png');}
@@ -78,6 +192,36 @@
         grid-template-rows: 100px repeat(22, 1fr) 30px;
         grid-template-columns: 35px repeat(6, 1fr) 35px;
     }
+    .projectTitle {
+        height: 32px;
+        font-size: 14pt;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 2pt;
+    }
+    .projectTitleSmall {
+        height: 30px;
+        font-size: 13pt;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 1.9pt;
+    }
+    .projectSubtitle {
+        height: 20px;
+        font-weight: 420;    
+        line-height: 20px;
+        font-size: 10pt;
+        margin-bottom: 50px;
+        letter-spacing: 1pt;
+    }
+    .projectSubtitleSmall {
+        height: 18px;
+        font-size: 9pt;
+        font-weight: 420;
+        line-height: 18px;
+        margin-bottom: 30px;
+        letter-spacing: 0.9pt;
+    }
 }
 @media only screen and (min-width: 1025px) {
     #devContainer {
@@ -91,11 +235,64 @@
     .card {
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
+    .card:hover .cardPic {
+        transform: scale(1.15);
+    }
     .control:hover {
         transform: scale(1.2);
     }
-    .cardPic:hover {
-        transform: scale(1.07);
+    .cardDesc:hover {
+        background-color: #f2f2f2;
+        justify-content: space-around;
+    }
+    .cardDesc:hover .projectTop {
+        transform: scale(1.1);
+    }
+    .cardDesc:hover .projectBottom {
+        display: flex;
+    }
+    .cardDesc:hover .projectBottomSmall {
+        display: flex;
+    }
+    .projectTitle {
+        height: 42px;
+        font-size: 16pt;
+        margin-top: 12vh;
+        font-weight: 500;
+        line-height: 42px;
+        margin-bottom: 10px;
+        letter-spacing: 2pt;
+    }
+    .projectTitleSmall {
+        height: 40px;
+        font-size: 14pt;
+        margin-top: 40px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 8px;
+        letter-spacing: 2pt;
+    }
+    .projectSubtitle {
+        height: 25px;
+        font-weight: 420;    
+        line-height: 25px;
+        font-size: 11.5pt;
+        margin-bottom: 50px;
+        letter-spacing: 1pt;
+    }
+    .projectSubtitleSmall {
+        height: 22px;
+        font-weight: 400;    
+        line-height: 22px;
+        font-size: 11pt;
+        margin-bottom: 25px;
+        letter-spacing: 1pt;
+    }
+    .projectBottomSmall {
+        font-size: 10pt;
+        line-height: 20pt;
+        margin-bottom: 20px;
+        letter-spacing: 1pt;
     }
     #devLogo {
         left: 40px;
@@ -105,5 +302,9 @@
     #devLogo:hover {
         cursor: none;
         transform: scale(1.3);
+    }
+    .projectLink:hover .linkButton {
+        opacity: 1;
+        transform: scale(1.2);
     }
 }

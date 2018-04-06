@@ -73,7 +73,7 @@ const about = ( props ) => {
                     <span className="aboutText">
                         Hey There!
                         I'm a Computer Science student with an edge for Web/Mobile Application Design and Development.
-                        I love designing beautiful interfaces and implementing them into smooth and engaging Applications.
+                        I love designing clean interfaces and implementing them into smooth and engaging Applications.
                         I use the adobe creative suite and mostly Javascript/Typescript.
                     </span>
                 </div>

@@ -33,7 +33,7 @@
 }
 .aboutInner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
@@ -49,7 +49,7 @@
     font-size: 16pt;
     font-weight: 600;
     letter-spacing: 2pt;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
 }
 #aboutPicture {
     min-width: 150px;
@@ -57,6 +57,7 @@
     height: 150px;
     border-width: 1px;
     border-radius: 50%;
+    margin-bottom: 40px;
     background-size: cover;
     background-position:center center;
     background-image: url('../../assets/Profile.JPG');
@@ -265,7 +266,8 @@
         font-weight: 500;
     }
     .aboutInner {
-        margin-bottom: 35px;
+        flex-direction: column;
+        margin-bottom: 50px;
     }
     .iconButton {
         width: 30px;
