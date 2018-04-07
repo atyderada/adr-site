@@ -8,8 +8,8 @@
 #topArrow {
     position: absolute;
     z-index: 2;
-    top: 40px;
-    right: 50px;
+    top: 28px;
+    right: 22px;
 }
 .control {
     width: 15px;
@@ -254,12 +254,13 @@
         font-size: 22pt;
         font-weight: 500;
         letter-spacing: 4pt;
-        margin-bottom: 18px;
+        margin-bottom: 50px;
     }
     #aboutPicture {
         min-width: 280px;
         width: 280px;
         height: 280px;
+        margin-bottom: 0;
         margin-right: 50px;
     }
     #iconsContainer {
@@ -275,13 +276,13 @@
         height: 50px;
     }
     .aboutText {
-        font-size: 14pt;
-        line-height: 35pt;
-        font-weight: 500;
+        font-size: 13pt;
+        line-height: 40pt;
+        font-weight: 450;
     }
     .aboutInner {
         flex-direction: row;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     .iconButton {
         width: 30px;

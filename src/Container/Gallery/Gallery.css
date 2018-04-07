@@ -12,14 +12,14 @@
 }
 #galleryTitle {
     font-size: 14px;
-    margin: -100px 0 -75px;
+    margin: -150px 0 -50px;
     letter-spacing: 8px;
 }
 #logo {
     cursor: pointer;
     position: fixed;
     top: 25px;
-    left: 32px;
+    left: 30px;
     transition: transform 0.4s;
 }
 #logo:hover {
@@ -31,7 +31,7 @@
 }
 #home {
     top: 20px;
-    right: 12px;
+    right: 11px;
     position: fixed;
 }
 .control {
@@ -173,7 +173,7 @@
     }
     #galleryTitle {
         font-size: 24px;
-        margin: -150 0 -30px;
+        margin: -150 0 50px;
         letter-spacing: 16px;
     }
     #logo {

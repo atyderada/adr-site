@@ -63,12 +63,12 @@
     height: 24px;
     cursor: pointer;
     border-radius: 50%;
-    margin-right: 25px;
+    margin-right: 28px;
     transition: transform 0.3s;
 }
 #menulogo {
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 28px;
     transition: transform 0.4s;
 }
 @media only screen and (min-width: 1025px) {
