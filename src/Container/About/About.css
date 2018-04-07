@@ -240,6 +240,10 @@
         width: 70vw;
         padding: 0 15vw;
     }
+    #topArrow {
+        top: 52px;
+        right: 54px;
+    }
     #topArrow:hover {
         transform: scale(1.2) translateY(-8px);
     }
