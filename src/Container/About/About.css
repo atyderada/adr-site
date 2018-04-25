@@ -53,9 +53,8 @@
     align-items: center;
 }
 #aboutTitle {
-    font-size: 16pt;
-    font-weight: 600;
-    letter-spacing: 2pt;
+    font-size: 12pt;
+    font-weight: 550;
     margin-bottom: 35px;
 }
 #aboutPicture {
@@ -255,9 +254,8 @@
         transform: scale(1.3);
     }
     #aboutTitle {
-        font-size: 22pt;
-        font-weight: 500;
-        letter-spacing: 4pt;
+        font-size: 15pt;
+        font-weight: 600;
         margin-bottom: 50px;
     }
     #aboutPicture {

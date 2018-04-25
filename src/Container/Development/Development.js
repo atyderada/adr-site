@@ -8,21 +8,21 @@ const development = (props) => {
         widht: 18+'px',
         height: 18+'px'
     }
-    let title = <div style={{
+    let title = <div id=""style={{
                     gridArea: '1 / 3 / 1 / 7',
-                    fontSize: '12pt',
-                    fontWeight: '500',
+                    fontSize: '11pt',
+                    fontWeight: '550',
                     lineHeight: '24pt',
                     letterSpacing: '3pt'}}>
-                <br/>Development</div>
+                <br/>DEVELOPMENT</div>
     if (window.innerWidth > 768) {
         title = <div style={{
                     gridArea: '1 / 4 / 1 / 6',
-                    fontSize: '18pt',
-                    fontWeight: '500',
+                    fontSize: '14pt',
+                    fontWeight: '600',
                     lineHeight: '36pt',
                     letterSpacing: '4pt'}}>
-        <br/>Development</div>
+            <br/>DEVELOPMENT</div>
         iconsStyle = {
             widht: 30+'px',
             height: 30+'px'

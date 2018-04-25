@@ -55,7 +55,7 @@ const about = ( props ) => {
                 <div className="wave wave_5"></div>
             </div>
             <div id="top">
-                <span id="aboutTitle">About</span>
+                <span id="aboutTitle">ABOUT</span>
                 <div className="aboutInner">
                     <div id="aboutPicture"></div>
                     <span className="aboutText">

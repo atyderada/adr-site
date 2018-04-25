@@ -21,9 +21,12 @@ const design = (props) => {
         grid = (
             <div id="desProjectsGrid">
                 <div style={{
-                    gridArea: '1 / 4 / 2 / 6'
-                }}><br /><br /><h2>Design</h2></div>
-                
+                    gridArea: '1 / 4 / 1 / 6',
+                    fontSize: '14pt',
+                    fontWeight: '600',
+                    lineHeight: '36pt',
+                    letterSpacing: '4pt'}}>
+                <br/>DESIGN</div>
                 <div style={{
                         gridArea: '2 / 2 / 4 / 5'}}
                         className="designCard">
@@ -65,10 +68,13 @@ const design = (props) => {
     } else {
         grid = (
             <div id="desProjectsGrid">
-                <div style={{
-                    gridArea: '1 / 2 / 1 / 2'
-                }}><br /><h3>Design</h3></div>
-                
+                <div id=""style={{
+                    gridArea: '1 / 2 / 1 / 2',
+                    fontSize: '11pt',
+                    fontWeight: '550',
+                    lineHeight: '24pt',
+                    letterSpacing: '3pt'}}>
+                <br/>DESIGN</div>
                 <div style={{
                         gridArea: '2 / 2 / 2 / 2'}}
                         className="designCard">
