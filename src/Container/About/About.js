@@ -14,13 +14,13 @@ const about = ( props ) => {
         extra = 
             <div className="aboutExtra">
                 <div className="aboutText">
-                    <span>I will be graduating from Rose-Hulman in May 2018</span> <a href="http://www.rose-hulman.edu/" target="_blank" rel="noopener noreferrer">
+                    <span>I graduated from Rose-Hulman in May 2018</span> <a href="http://www.rose-hulman.edu/" target="_blank" rel="noopener noreferrer">
                         <img id="roseImg" className="aboutIcon" src={require('../../assets/Rose-Logo.png')} alt="Rose Hulman Icon" />
                     </a>
                     I am from the vibrant city of La Paz, Bolivia  <a href="https://www.youtube.com/playlist?list=PLFTQSQOjNIfNKpVekjwU3pzDtlZBKVYp3" target="_blank" rel="noopener noreferrer">
                         <img id="boliviaImg" className="aboutIcon" src={require('../../assets/bolivia-map.png')} alt="Bolivia map" />
                     </a>
-                    My favorite things are food, music, travel and photography.
+                    My favorite things are music, food, sports, travel and photography.
                     Feel free to check out the links bellow or contact me through email.
                     Have a great day!
                 </div>
@@ -60,7 +60,7 @@ const about = ( props ) => {
                     <div id="aboutPicture"></div>
                     <span className="aboutText">
                         Hey There!
-                        I'm a Computer Science student with an edge for Web/Mobile Application Design and Development.
+                        I'm a software developer / designer with an edge for Web/Mobile Application Design and Development.
                         I love designing clean interfaces and implementing them into smooth and engaging Applications.
                         I use the adobe creative suite and mostly Javascript/Typescript.
                     </span>
