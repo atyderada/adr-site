@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.ef8927c2.css",
-  "main.css.map": "static/css/main.ef8927c2.css.map",
-  "main.js": "static/js/main.65d3a23e.js",
-  "main.js.map": "static/js/main.65d3a23e.js.map",
+  "main.css": "static/css/main.afdd5168.css",
+  "main.css.map": "static/css/main.afdd5168.css.map",
+  "main.js": "static/js/main.c6939a3b.js",
+  "main.js.map": "static/js/main.c6939a3b.js.map",
   "static/media/Centipede.png": "static/media/Centipede.26f13aa9.png",
   "static/media/DarkSunset.jpg": "static/media/DarkSunset.cfcfadfa.jpg",
   "static/media/FlyingTrain.JPG": "static/media/FlyingTrain.40047ca8.JPG",
@@ -15,8 +15,6 @@
   "static/media/LROTUSE-BR.png": "static/media/LROTUSE-BR.fad11d2f.png",
   "static/media/LROTUSE-PY.png": "static/media/LROTUSE-PY.5af9c099.png",
   "static/media/MapBrothers.png": "static/media/MapBrothers.f923203c.png",
-  "static/media/MomentB.png": "static/media/MomentB.03c9956e.png",
-  "static/media/MomentW.png": "static/media/MomentW.baa2ec62.png",
   "static/media/NeedleBoat.JPG": "static/media/NeedleBoat.37ccfb88.JPG",
   "static/media/OneToOne.JPG": "static/media/OneToOne.99cef9b6.JPG",
   "static/media/Oportuna.png": "static/media/Oportuna.ff35de10.png",
@@ -39,5 +37,7 @@
   "static/media/WipallaMountains.png": "static/media/WipallaMountains.6169fc1c.png",
   "static/media/bolivia-map.png": "static/media/bolivia-map.44617789.png",
   "static/media/cwc.png": "static/media/cwc.3e8557d6.png",
-  "static/media/logo.png": "static/media/logo.acb63477.png"
+  "static/media/logo.png": "static/media/logo.acb63477.png",
+  "static/media/momentB.png": "static/media/momentB.03c9956e.png",
+  "static/media/momentW.png": "static/media/momentW.baa2ec62.png"
 }
