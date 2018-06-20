@@ -13,12 +13,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Switch>
           <Route exact path='/' component={LandingScreen}/>
           <Route path='/gallery' component={Gallery}/>
           <Route path='/about' component={About}/>
           <Route path='/projects' component={Menu}/>
           <Route path='/development' component={Development}/>
           <Route path='/design' component={Design}/>
+        </Switch>
       </div>
     );
   }
