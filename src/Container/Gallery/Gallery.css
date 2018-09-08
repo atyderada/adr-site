@@ -77,52 +77,52 @@
 .box:nth-child(1) {
     -webkit-grid-column: span 2;
     grid-column: span 2;
-    background-image: url('../../assets/images/DarkSunset.jpg');   
+    background-image: url('../../assets/images/DarkSunset.png');   
 }
 .box:nth-child(2) {
     -webkit-grid-column: span 2;
     grid-column: span 2;
-    background-image: url('../../assets/images/FlyingTrain.JPG'); 
+    background-image: url('../../assets/images/FlyingTrain.png'); 
 }
 .box:nth-child(3) {
     -webkit-grid-column: span 2;
     grid-column: span 2;
-    background-image: url('../../assets/images/GoldenDawn.JPG');  
+    background-image: url('../../assets/images/GoldenDawn.png');  
 }
 .box:nth-child(4) {
     -webkit-grid-column: span 2;
     grid-column: span 2;
-    background-image: url('../../assets/images/Sunset.JPG');  
+    background-image: url('../../assets/images/Sunset.png');  
 }
 .box:nth-child(5) {
     -webkit-grid-column: span 2;
     grid-column: span 2;
-    background-image: url('../../assets/images/Illimani.jpg'); 
+    background-image: url('../../assets/images/Illimani.png'); 
 }
 .box:nth-child(6) {
     -webkit-grid-row: span 2;
     grid-row: span 2;
-    background-image: url('../../assets/images/Gaudi1.jpg');
+    background-image: url('../../assets/images/Gaudi1.png');
 }
 .box:nth-child(7) {
     -webkit-grid-row: span 2;
     grid-row: span 2;
-    background-image: url('../../assets/images/Gaudi2.jpg');  
+    background-image: url('../../assets/images/Gaudi2.png');  
 }
 .box:nth-child(8) {
     -webkit-grid-column: span 2;
     grid-column: span 2;
-    background-image: url('../../assets/images/UmedaSky.JPG'); 
+    background-image: url('../../assets/images/UmedaSky.png'); 
 }
 .box:nth-child(9) {
     -webkit-grid-row: span 2;
     grid-row: span 2; 
-    background-image: url('../../assets/images/NeedleBoat.JPG');
+    background-image: url('../../assets/images/NeedleBoat.png');
 }
 .box:nth-child(10) {
     -webkit-grid-row: span 2;
     grid-row: span 2; 
-    background-image: url('../../assets/images/OneToOne.JPG');
+    background-image: url('../../assets/images/OneToOne.png');
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* For ipad: */
